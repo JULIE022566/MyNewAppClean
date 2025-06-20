@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../pages/Home';
 import Favorites from '../pages/Favorites';
 import NewMessage from '../pages/NewMessage';
-import OpenedMessage from '../pages/OpenedMessages';
+import {OpenedMessages} from '../pages/OpenedMessages';
 import DiscoveredMessages from '../pages/DiscoveredMessages';
 import Settings from '../pages/Settings';
 import HeaderCustom from '../components/headerCustom';
@@ -15,8 +15,9 @@ export type RootStackParamList = {
   Home: undefined;
   Favorites: undefined;
   NewMessage: undefined;
-  OpenedMessage: undefined;
+  OpenedMessages: undefined;
   DiscoveredMessages: undefined;
+
   Settings: undefined;
   MissedMessages: undefined;
 };
@@ -44,7 +45,7 @@ function MainStackNavigator(initialRoute: keyof RootStackParamList) {
     >
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Favorites" component={Favorites} />
-      <Stack.Screen name="OpenedMessage" component={OpenedMessage} />
+      <Stack.Screen name="OpenedMessages" component={OpenedMessages} />
       <Stack.Screen name="DiscoveredMessages" component={DiscoveredMessages} />
       <Stack.Screen name="Settings" component={Settings} />
       <Stack.Screen
@@ -60,7 +61,7 @@ export default function AppNavigator() {
   return (
     <Drawer.Navigator id={undefined} screenOptions={{ headerShown: false }}>
       <Drawer.Screen name="Accueil" component={MainStackNavigator('Home')} />
-      <Drawer.Screen name="Message du Jour" component={MainStackNavigator('OpenedMessage')} />
+      <Drawer.Screen name="Message du Jour" component={MainStackNavigator('OpenedMessages')} />
       <Drawer.Screen name="Favoris" component={MainStackNavigator('Favorites')} />
       <Drawer.Screen name="Tous les Messages" component={MainStackNavigator('DiscoveredMessages')} />
       <Drawer.Screen name="Paramètres" component={MainStackNavigator('Settings')} />

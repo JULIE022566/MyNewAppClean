@@ -79,7 +79,7 @@ export default function NewMessage() {
   };
 
   const openFull = () => {
-    navigation.navigate('OpenedMessage');
+    navigation.navigate('OpenedMessages');
   };
 
   if (!todayMessage) {

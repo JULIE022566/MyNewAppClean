@@ -45,7 +45,7 @@ export default function MissedMessages() {
     const updated = [...discovered, message];
     await AsyncStorage.setItem('discovered_messages', JSON.stringify(updated));
     await AsyncStorage.setItem('last_message', JSON.stringify(message));
-    navigation.navigate('OpenedMessage');
+    navigation.navigate('OpenedMessages');
   };
 
   const formatDate = (iso: string) => {

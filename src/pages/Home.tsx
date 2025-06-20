@@ -110,7 +110,7 @@ await AsyncStorage.removeItem('last_message');
 
   const handleOpenFavorite = async (fav: Message) => {
     await AsyncStorage.setItem('last_message', JSON.stringify(fav));
-    navigation.navigate('OpenedMessage');
+    navigation.navigate('OpenedMessages');
   };
 
   return (
@@ -121,8 +121,7 @@ await AsyncStorage.removeItem('last_message');
           <Text style={styles.countdownText}>{countdown}</Text>
         </View>
       </View>
-      
-      {/*
+    
       {missedMessages.length > 0 && (
         <View style={styles.missedButton}>
           <Text style={styles.missedText}>
@@ -136,11 +135,11 @@ await AsyncStorage.removeItem('last_message');
           </TouchableOpacity>
         </View>
       )}
-      */}
+      
 
       <TouchableOpacity
         style={styles.lastMessageBox}
-        onPress={() => navigation.navigate('OpenedMessage')}
+        onPress={() => navigation.navigate('OpenedMessages')}
       >
         <Text style={styles.title}>Le Message du Jour</Text>
         {lastMessage ? (

@@ -35,7 +35,7 @@ export default function DiscoveredMessages() {
 
   const openMessage = async (message: Message) => {
     await AsyncStorage.setItem('last_message', JSON.stringify(message));
-    navigation.navigate('OpenedMessage');
+    navigation.navigate('OpenedMessages');
   };
 
   const formatDate = (iso: string) => {

@@ -44,7 +44,7 @@ export default function Favorites() {
 
   const openMessage = async (msg: Message) => {
     await AsyncStorage.setItem('last_message', JSON.stringify(msg));
-    navigation.navigate('OpenedMessage');
+    navigation.navigate('OpenedMessages');
   };
 
   const formatDate = (iso: string) => {

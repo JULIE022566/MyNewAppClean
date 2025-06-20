@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { FontAwesome } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 interface Message {
   content: string;
   date: string;
 }
 
-export default function OpenedMessage() {
+export function OpenedMessages() {
   const [message, setMessage] = useState<Message | null>(null);
   const [isFavorite, setIsFavorite] = useState(false);
 
