@@ -27,6 +27,7 @@ export default function App() {
           <NavigationContainer>
             <AppNavigator />
           </NavigationContainer>
+          <OpenedMessages />
         </NotificationProvider>
       </ThemeProvider>
     </SafeAreaProvider>
