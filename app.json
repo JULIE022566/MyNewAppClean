@@ -1,12 +1,10 @@
-{
-  "expo": {
+{"expo": {
     "name": "Je t'aime",
-    "slug": "Je t'aime",
+    "slug": "je-taime",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -30,6 +28,10 @@
       "eas": {
         "projectId": "9d676568-aa63-436c-b485-38190909add7"
       }
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      "expo-notifications"
+    ]
   }
 }

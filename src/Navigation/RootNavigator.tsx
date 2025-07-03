@@ -4,18 +4,19 @@ import AppNavigator from './AppNavigator';
 import Home from '../pages/Home';
 import Favorites from '../pages/Favorites';
 import NewMessage from '../pages/NewMessage';
-import {OpenedMessages} from '../pages/OpenedMessages';
+import OpenedMessage from '../pages/OpenedMessages';
 import DiscoveredMessages from '../pages/DiscoveredMessages';
 import Settings from '../pages/Settings';
+import MissedMessages from '../pages/MissedMessages';
+import { Ad } from './AppNavigator';
 
 const Drawer = createDrawerNavigator();
 
-export const navigationRef = React.createRef();
+
 
 export default function RootNavigator() {
   return (
     <Drawer.Navigator
-      id={undefined}
       screenOptions={{
         headerShown: false, // le header custom est géré dans AppNavigator
       }}
@@ -24,6 +25,7 @@ export default function RootNavigator() {
       <Drawer.Screen name="Favorites" component={Favorites} options={{ title: 'Mes Favoris' }} />
       <Drawer.Screen name="DiscoveredMessages" component={DiscoveredMessages} options={{ title: 'Messages découverts' }} />
       <Drawer.Screen name="Settings" component={Settings} options={{ title: 'Paramètres' }} />
+      <Drawer.Screen name="MissedMessages" component={MissedMessages} options={{ title: 'Messages manquants' }} />
     </Drawer.Navigator>
   );
 }

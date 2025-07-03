@@ -22,8 +22,10 @@ export default function NewMessage() {
     background: theme === 'dark' ? '#121212' : '#ffffff',
     text: theme === 'dark' ? '#ffffff' : '#222222',
     subtle: theme === 'dark' ? '#bbbbbb' : '#666666',
-    buttonPrimary: '#007BFF',
-    buttonFavorite: '#ffc107',
+    cardBackground: theme === 'dark' ? '#1e1e1e' : '#f9f9f9',
+    cardBorder: theme === 'dark' ? '#333333' : '#e0e0e0',
+    iconColor: '#FFD700',
+    borderColor: theme === 'dark' ? 'rgba(255, 255, 255, 0.3)' : 'rgba(128, 128, 128, 0.3)',
   };
 
   useEffect(() => {
@@ -79,14 +81,14 @@ export default function NewMessage() {
   };
 
   const openFull = () => {
-    navigation.navigate('OpenedMessages');
+    navigation.navigate('OpenedMessage');
   };
 
   if (!todayMessage) {
     return (
       <View style={[styles.container, { backgroundColor: colors.background }]}>
         <Text style={[styles.info, { color: colors.subtle }]}>
-          Aucun message prévu pour aujourd’hui.
+          Tu as déjà ouvert ton message aujourd’hui.
         </Text>
       </View>
     );
@@ -102,46 +104,73 @@ export default function NewMessage() {
         })}
       </Text>
 
-      <Text style={[styles.message, { color: colors.text }]}>
+      {/* <Text style={[styles.message, { color: colors.text }]}>
         {todayMessage.content}
-      </Text>
+      </Text> */}
 
-      <TouchableOpacity
+      <TouchableOpacity 
+        onPress={openFull}
+      >
+        <Text style={[styles.message, { color: colors.text }]}>Voir le Message Du Jour</Text>
+      </TouchableOpacity>
+
+      {/* <TouchableOpacity
         onPress={toggleFavorite}
         style={[styles.favoriteButton, { backgroundColor: colors.buttonFavorite }]}
       >
         <Text style={styles.favoriteText}>
           {isFavorite ? 'Retirer des favoris' : 'Ajouter aux favoris'}
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
+      {/*
       <TouchableOpacity
         onPress={openFull}
         style={[styles.openButton, { backgroundColor: colors.buttonPrimary }]}
       >
-        <Text style={styles.openButtonText}>Ouvrir en plein écran</Text>
+        <Text style={styles.openButtonText}>Voir le Message Du Jour</Text>
       </TouchableOpacity>
+      */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    padding: 24,
+    backgroundColor: '#fff',
     flex: 1,
+    alignItems: 'center',
     justifyContent: 'center',
   },
   date: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 12,
+    fontSize: 16,
+    color: '#555',
+    marginBottom: 16,
     textAlign: 'center',
+  },
+  messageBox: {
+    borderWidth: 1,
+    borderColor: '#4caf50',
+    padding: 24,
+    borderRadius: 12,
+    marginBottom: 30,
+    width: '100%',
   },
   message: {
-    fontSize: 16,
-    marginBottom: 24,
+    fontSize: 24,
+    color: '#000',
     textAlign: 'center',
+    borderWidth: 1,
+    borderColor: '#4caf50',
+    padding: 20,
+    borderRadius: 12
+    
   },
+  icon: {
+    marginTop: 10,
+  },
+  
   favoriteButton: {
     padding: 12,
     borderRadius: 8,
