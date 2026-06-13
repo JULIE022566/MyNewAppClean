@@ -5,8 +5,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useTheme } from '../context/ThemeContext';
 // bouton pour simuler un nouveau message
 import * as Notifications from 'expo-notifications';
-import { Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Alert } from 'react-native';
+
 
 
 export default function Settings() {
@@ -52,6 +53,24 @@ export default function Settings() {
     }
   };
 
+  const resetData = async () => {
+  Alert.alert(
+    'Réinitialiser',
+    'Effacer l\'historique et les favoris ?',
+    [
+      { text: 'Annuler', style: 'cancel' },
+      {
+        text: 'Confirmer',
+        style: 'destructive',
+        onPress: async () => {
+          await AsyncStorage.multiRemove(['discovered_messages', 'favorites', 'last_message']);
+          Alert.alert('Fait !', 'Les données ont été réinitialisées.');
+        },
+      },
+    ]
+  );
+};
+
 return (
   <View style={[styles.container, { backgroundColor: resolvedTheme === 'dark' ? '#121212' : '#ffffff' }]}>
     <Text style={[styles.title, { color: theme === 'dark' ? '#ffffff' : '#880e4f', fontWeight: 'bold'  }]}>Paramètres</Text>
@@ -77,6 +96,11 @@ return (
         ))}
       </View>
     </View>
+
+    <TouchableOpacity onPress={resetData} style={{ marginTop: 20, padding: 12, backgroundColor: '#e53935', borderRadius: 10, alignItems: 'center' }}>
+  <Text style={{ color: '#fff', fontWeight: 'bold' }}>Réinitialiser l'app</Text>
+</TouchableOpacity>
+
 {/* Bouton pour remettre à zéro les notifications */}
     <TouchableOpacity style={styles.settingRow} onPress={() => setShowPicker(true)}>
       <Text style={[styles.label, { color: resolvedTheme === 'dark' ? '#ddd' : '#333' }]}>Heure de notification</Text>
@@ -121,6 +145,7 @@ return (
         onChange={onChangeTime}
       />
     )}
+    
   </View>
 );
 }

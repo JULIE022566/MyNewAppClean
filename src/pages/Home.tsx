@@ -81,10 +81,12 @@ export default function Home() {
         const openedDates = opened.map((m) => m.date);
 
         const missed = messages.filter((msg) => {
-          const msgDate = new Date(msg.date);
-          const today = new Date();
-          return msgDate < today && !openedDates.includes(msg.date);
-        });
+            if (msg.date === getTodayString()) return false;
+            const msgDate = new Date(msg.date);
+            const today = new Date();
+            return msgDate < today && !openedDates.includes(msg.date);
+          });
+
         setMissedMessages(missed);
 
         const todayMsg = messages.find(m => m.date === getTodayString());

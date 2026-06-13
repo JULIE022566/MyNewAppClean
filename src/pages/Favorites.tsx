@@ -78,9 +78,7 @@ export default function Favorites() {
 
   if (favorites.length === 0) {
     return (
-      <View style={[styles.emptyContainer, { backgroundColor: theme === 'dark' ? '#b52d7133' : '#f7639445' }]}>
-        <Text style={[styles.emptyText, { color: colors.subtle }]}>
-          Aucun message en favori.
+      <View style={[styles.emptyContainer, { backgroundColor: colors.background }]}> 
         </Text>
       </View>
     );
