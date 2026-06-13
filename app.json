@@ -34,14 +34,15 @@
     "plugins": [
       "@react-native-community/datetimepicker",
       [
-  "expo-build-properties",
+        "expo-build-properties",
         {
           "android": {
             "kotlinVersion": "2.1.20",
             "agpVersion": "8.7.0"
           }
         }
-      ]
+      ],
+      "expo-font"
     ]
   }
 }

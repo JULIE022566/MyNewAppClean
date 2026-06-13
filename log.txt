@@ -1,0 +1,962 @@
+--------- beginning of main
+06-13 02:22:52.803  2110  7225 E QLM-Client-Lib: QLM-Lib-Client:do_common_listen:connect failure, err:13, path:/dev/socket/qlm_service
+06-13 02:22:52.803  2110  2110 W pmCoreThread: type=1400 audit(0.0:338776012): avc:  denied  { write } for  name="qlm_service" dev="tmpfs" ino=1644 scontext=u:r:vendor_hal_poweroptservice_qti:s0 tcontext=u:object_r:vendor_qlm_socket:s0 tclass=sock_file permissive=0
+06-13 02:22:52.923  2467  4527 D StNfcHal: (#06B7D) Rx 6f 02 27 (hidden)
+06-13 02:22:52.924  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:53.231  2467  4527 D StNfcHal: (#06B7E) Rx 6f 02 0f (hidden)
+06-13 02:22:53.233  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:53.484  2467  4527 D StNfcHal: (#06B7F) Rx 6f 02 27 (hidden)
+06-13 02:22:53.484  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:53.790  2467  4527 D StNfcHal: (#06B80) Rx 6f 02 0f (hidden)
+06-13 02:22:53.791  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:53.856  2813  2813 I adbd    : adbd service requested 'shell,v2,TERM=xterm-256color,raw:monkey -p com.anonymous.MyNewAppClean -c android.intent.category.LAUNCHER 1'
+--------- beginning of kernel
+06-13 02:22:53.621  2592  2592 E [binder][0x43da430bc4e][00:22:53.890758] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:22:53.621  2592  2592 E [binder][0x43da430c028][00:22:53.890810] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:22:53.621 15463 15463 I [kworke][0x43da430dc78][00:22:53.891187] qca6750: [15463:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+06-13 02:22:53.912  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:22:53.912  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:22:53.912  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:22:54.045  2467  4527 D StNfcHal: (#06B81) Rx 6f 02 27 (hidden)
+06-13 02:22:54.045  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:54.174 30228 30228 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+06-13 02:22:54.198 30228 30228 I AndroidRuntime: Using default boot image
+06-13 02:22:54.199 30228 30228 I AndroidRuntime: Leaving lock profiling enabled
+06-13 02:22:54.208 30228 30228 I app_process: Using generational CollectorTypeCMC GC.
+06-13 02:22:54.351  2467  4527 D StNfcHal: (#06B82) Rx 6f 02 0f (hidden)
+06-13 02:22:54.351  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:54.371 30228 30228 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so:libofflineproc_jni.so
+06-13 02:22:54.398 30228 30228 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-13 02:22:54.398 30228 30228 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/9/icu") succeeded. 
+06-13 02:22:54.398 30228 30228 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt76l.dat
+06-13 02:22:54.410 30228 30228 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-13 02:22:54.414 30228 30228 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+06-13 02:22:54.417 30228 30228 I app_process: Priority-to-niceness mapping: 19, 16, 13, 10, 0, -2, -4, -5, -6, -8
+06-13 02:22:54.521 30228 30228 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-13 02:22:54.522 30228 30228 D AndroidRuntime: Calling main entry com.android.commands.monkey.Monkey
+06-13 02:22:54.526 30228 30228 D nativeloader: Load /system/lib64/libmonkey_jni.so using ns default for caller /system/framework/monkey.jar in same partition (is_bridged=0): ok
+06-13 02:22:54.530 30228 30228 W Monkey  : args: [-p, com.anonymous.MyNewAppClean, -c, android.intent.category.LAUNCHER, 1]
+06-13 02:22:54.541 30228 30228 W PlatformAconfigPackage: android.os.flagging.AconfigStorageReadException: ERROR_CANNOT_READ_STORAGE_FILE: Fail to mmap storage
+06-13 02:22:54.542 30228 30228 I AconfigPackage: com.android.cellbroadcastreceiver.flags is mapped to com.android.cellbroadcast
+06-13 02:22:54.543 30228 30228 I AconfigPackage: android.os.profiling is mapped to com.android.profiling
+06-13 02:22:54.544 30228 30228 I AconfigPackage: com.android.ipsec.flags is mapped to com.android.ipsec
+06-13 02:22:54.544 30228 30228 I AconfigPackage: com.android.org.conscrypt.flags is mapped to com.android.conscrypt
+06-13 02:22:54.544 30228 30228 I AconfigPackage: com.android.org.conscrypt.net.flags is mapped to com.android.conscrypt
+06-13 02:22:54.545 30228 30228 I AconfigPackage: com.android.rkpd.flags is mapped to com.android.rkpd
+06-13 02:22:54.546 30228 30228 I AconfigPackage: android.provider.flags is mapped to com.android.configinfrastructure
+06-13 02:22:54.546 30228 30228 I AconfigPackage: com.android.server.deviceconfig is mapped to com.android.configinfrastructure
+06-13 02:22:54.547 30228 30228 I AconfigPackage: android.uprobestats.mainline.flags is mapped to com.android.uprobestats
+06-13 02:22:54.548 30228 30228 I AconfigPackage: com.android.uwb.flags is mapped to com.android.uwb
+06-13 02:22:54.548 30228 30228 I AconfigPackage: com.android.ranging.flags is mapped to com.android.uwb
+06-13 02:22:54.549 30228 30228 I AconfigPackage: com.android.wifi.flags is mapped to com.android.wifi
+06-13 02:22:54.550 30228 30228 I AconfigPackage: com.android.nfc.module.flags is mapped to com.android.nfcservices
+06-13 02:22:54.551 30228 30228 I AconfigPackage: android.graphics.pdf.flags is mapped to com.android.mediaprovider
+06-13 02:22:54.551 30228 30228 I AconfigPackage: com.android.providers.media.flags is mapped to com.android.mediaprovider
+06-13 02:22:54.551 30228 30228 I AconfigPackage: android.graphics.pdf.flags.readonly is mapped to com.android.mediaprovider
+06-13 02:22:54.551 30228 30228 I AconfigPackage: com.android.tethering.mainline.beta is mapped to com.android.tethering
+06-13 02:22:54.551 30228 30228 I AconfigPackage: android.net.http is mapped to com.android.tethering
+06-13 02:22:54.551 30228 30228 I AconfigPackage: com.android.tethering.readonly.flags is mapped to com.android.tethering
+06-13 02:22:54.551 30228 30228 I AconfigPackage: android.net.vcn is mapped to com.android.tethering
+06-13 02:22:54.551 30228 30228 I AconfigPackage: com.android.net.flags is mapped to com.android.tethering
+06-13 02:22:54.551 30228 30228 I AconfigPackage: com.android.tethering.flags is mapped to com.android.tethering
+06-13 02:22:54.552 30228 30228 I AconfigPackage: com.android.tethering.beta.test is mapped to com.android.tethering
+06-13 02:22:54.552 30228 30228 I AconfigPackage: com.android.nearby.flags is mapped to com.android.tethering
+06-13 02:22:54.552 30228 30228 I AconfigPackage: com.android.net.thread.flags is mapped to com.android.tethering
+06-13 02:22:54.552 30228 30228 I AconfigPackage: com.android.net.ct.flags is mapped to com.android.tethering
+06-13 02:22:54.552 30228 30228 I AconfigPackage: com.android.adservices.ondevicepersonalization.flags is mapped to com.android.ondevicepersonalization
+06-13 02:22:54.553 30228 30228 I AconfigPackage: com.android.adservices.flags is mapped to com.android.adservices
+06-13 02:22:54.553 30228 30228 I AconfigPackage: com.android.sdksandbox.flags is mapped to com.android.adservices
+06-13 02:22:54.554 30228 30228 I AconfigPackage: com.android.media.extractor.flags is mapped to com.android.media
+06-13 02:22:54.554 30228 30228 I AconfigPackage: com.android.media.metrics.flags is mapped to com.android.media
+06-13 02:22:54.554 30228 30228 I AconfigPackage: com.android.media.mainline.flags is mapped to com.android.media
+06-13 02:22:54.555 30228 30228 I AconfigPackage: com.android.os.statsd.flags is mapped to com.android.os.statsd
+06-13 02:22:54.556 30228 30228 I AconfigPackage: com.android.healthfitness.flags is mapped to com.android.healthfitness
+06-13 02:22:54.557 30228 30228 I AconfigPackage: android.media.swcodec.flags is mapped to com.android.media.swcodec
+06-13 02:22:54.557 30228 30228 I AconfigPackage: com.android.permission.flags is mapped to com.android.permission
+06-13 02:22:54.557 30228 30228 I AconfigPackage: com.android.permissioncontroller.flags is mapped to com.android.permission
+06-13 02:22:54.558 30228 30228 I AconfigPackage: com.android.art.flags is mapped to com.android.art
+06-13 02:22:54.558 30228 30228 I AconfigPackage: com.android.art.rw.flags is mapped to com.android.art
+06-13 02:22:54.558 30228 30228 I AconfigPackage: com.android.libcore is mapped to com.android.art
+06-13 02:22:54.559 30228 30228 I AconfigPackage: com.android.appsearch.flags is mapped to com.android.appsearch
+06-13 02:22:54.560 30228 30228 I AconfigPackage: com.android.bluetooth.flags is mapped to com.android.bt
+06-13 02:22:54.561 30228 30228 I AconfigPackage: com.android.devicelock.flags is mapped to com.android.devicelock
+06-13 02:22:54.561 30228 30228 I AconfigPackage: com.android.system.virtualmachine.flags is mapped to com.android.virt
+06-13 02:22:54.562 30228 30228 I AconfigPackage: com.android.icu is mapped to com.android.i18n
+06-13 02:22:54.563 30228 30228 I AconfigPackage: com.android.adbd.flags is mapped to com.android.adbd
+06-13 02:22:54.563 30228 30228 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+06-13 02:22:54.566 30228 30228 W libc    : Access denied finding property "qemu.sf.lcd_density"
+06-13 02:22:54.566 30228 30228 W libc    : Access denied finding property "qemu.sf.lcd_density"
+06-13 02:22:54.563 30228 30228 W commands.monkey: type=1400 audit(0.0:338776013): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=358 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+06-13 02:22:54.563 30228 30228 W commands.monkey: type=1400 audit(0.0:338776014): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=358 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+06-13 02:22:54.301 30228 30228 I input   : Monkey touch as /devices/virtual/input/input7
+06-13 02:22:54.574 30228 30228 W Monkey  :  arg: "-p"
+06-13 02:22:54.574 30228 30228 W Monkey  :  arg: "com.anonymous.MyNewAppClean"
+06-13 02:22:54.574 30228 30228 W Monkey  :  arg: "-c"
+06-13 02:22:54.574 30228 30228 W Monkey  :  arg: "android.intent.category.LAUNCHER"
+06-13 02:22:54.574 30228 30228 W Monkey  :  arg: "1"
+06-13 02:22:54.575 30228 30228 W Monkey  : data="com.anonymous.MyNewAppClean"
+06-13 02:22:54.575 30228 30228 W Monkey  : data="android.intent.category.LAUNCHER"
+06-13 02:22:54.605  2467  4527 D StNfcHal: (#06B83) Rx 6f 02 27 (hidden)
+06-13 02:22:54.605  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:54.607  3162  3620 D EventHub: No input device configuration file found for device 'Monkey touch'.
+06-13 02:22:54.610  3162  3620 I EventHub: usingClockIoctl=true
+06-13 02:22:54.611  3162  3620 I EventHub: New device: id=8, fd=448, path='/dev/input/event7', name='Monkey touch', classes=TOUCH | TOUCH_MT, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false, 
+06-13 02:22:54.620  3162  3620 I InputReader: Device reconfigured: id=8, name='Monkey touch', size 1080x2392, orientation Rotation0, mode DIRECT, display id 0
+06-13 02:22:54.620  3162  3620 I InputReader: Device added: id=8, eventHubId=8, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+--------- beginning of system
+06-13 02:22:54.642  3162  3562 W ActivityManager: registerReceiverWithFeature: no app for null
+06-13 02:22:54.649  3162  3562 W ParceledListSlice: Element #109 is 20916 bytes.
+06-13 02:22:54.658  3162  3562 D NtDualAppsServiceImpl: overrideRequestIfNeeded: skip chooser because caller is null and requestCode is 0
+06-13 02:22:54.658  3162  3562 W ActivityTaskManager: callingPackage for (uid=2000, pid=30228) has no WPC
+06-13 02:22:54.659   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.660  3162  3562 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.660  3162  3562 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.660   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.660  3162  3562 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.660  3162  3562 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.660  3162  3562 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@61ee7a14 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-13 02:22:54.661  3162  3562 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+06-13 02:22:54.661  3162  3562 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+06-13 02:22:54.666  3162  3562 V NtGameModeImpl: onAppFocusChanged: pkg=com.nothing.launcher, uid=10214, category=-1, launchMode= 1
+06-13 02:22:54.666  3162  3562 D NtTaskWindowSurfaceInfo: PopUpView: onWindowingModeChanged 0->1 mTask=Task{73b699b #21099 type=standard}
+06-13 02:22:54.666  2176  2267 E ANDR-PERF-UTIL: ANDR-PERF-UTIL: save_node_val() 366: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+06-13 02:22:54.667  2176  2267 E ANDR-PERF-OPTSHANDLER: ANDR-PERF-OPTSHANDLER: modify_sysfsnode() 1094: Failed to read /sys/class/mmc_host/mmc0/clk_scaling/enable
+06-13 02:22:54.667  2176  2267 E ANDR-PERF-RESOURCEQS: ANDR-PERF-RESOURCEQS: AddAndApply() 167: Failed to apply optimization [11, 4]
+06-13 02:22:54.669  2176  2267 E ANDR-PERF-RESOURCEQS: ANDR-PERF-RESOURCEQS: AddAndApply() 131: Resource value ffffffff is not supported
+06-13 02:22:54.669  3162  3562 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+06-13 02:22:54.672  3162  3562 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+06-13 02:22:54.672  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: sendEvents() 232: Start hint for app com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity/1, hintID : 4099, hintID hex : 1003 value: -1
+06-13 02:22:54.672  2110  2204 I ANDR-PWR-OPT: PowerAppClassifier: getAppType() 59: checking app [com.anonymous.MyNewAppClean] is type 1
+06-13 02:22:54.672  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: isGame() 355: com.anonymous.MyNewAppClean is Game = 1
+06-13 02:22:54.672   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.673  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: sendEvents() 232: Start hint for app com.nothing.launcher/com.android.searchlauncher.SearchLauncher/40018016, hintID : 4100, hintID hex : 1004 value: -1
+06-13 02:22:54.673  2110  2204 I ANDR-PWR-OPT: PowerAppClassifier: getAppType() 59: checking app [com.nothing.launcher] is type 1
+06-13 02:22:54.673  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: isGame() 355: com.nothing.launcher is Game = 1
+06-13 02:22:54.673  3162  3562 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.673  3162  3562 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.676  3954  4047 V WindowManagerShell: Transition requested (#2917): android.os.BinderProxy@f78053c TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=21099 effectiveUid=10438 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity } baseActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} topActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} numActivities=1 lastActiveTime=242851203 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@1ab2c5} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 126 - 0, 0) topActivityInfo=ActivityInfo{734541a com.anonymous.MyNewAppClean.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 687 - 805, 1767) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2392) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 2917 }
+06-13 02:22:54.677  3162  3562 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 pid 30228 (BAL_ALLOW_PERMISSION) result code=0
+06-13 02:22:54.677  2233  2408 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+06-13 02:22:54.677  3954  4047 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+06-13 02:22:54.677  3162  3262 D BrightnessThermalClamper: Thermal status observer already started
+06-13 02:22:54.677  3162  3233 D OomAdjuster: set group = 5
+06-13 02:22:54.677  3162  3233 D OomAdjuster: set cpuset: 5
+06-13 02:22:54.680  4354  4354 I NT-AIWidgetAIWidgetInputMonitor: Lifecycle onStateChanged event=ON_PAUSE
+06-13 02:22:54.680  4354  4354 I NT-AIWidgetAIWidgetController: Lifecycle onStateChanged event=ON_PAUSE
+06-13 02:22:54.680   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.1::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.681  4354  4354 W SplitSelectStateCtor: Missing session instanceIds
+06-13 02:22:54.681  4354  4354 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+06-13 02:22:54.682  3954  4047 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=434
+06-13 02:22:54.683  3162  3219 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@61ee7a14 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+06-13 02:22:54.686  3954  4061 W HWUI    : Image decoding logging dropped!
+06-13 02:22:54.688  3935  7047 W PopUpWinSceneDetector: Malformat: no colon symbol ':', so discard it.
+06-13 02:22:54.688  3935  7047 W PopUpWinSceneDetector: PopUpWinEvent format is wrong! Ignore it
+06-13 02:22:54.690  2221  8558 V AudioFlinger: setParameters(): io 0, keyvalue screen_state=on, calling pid 3162 calling uid 1000
+06-13 02:22:54.691  4325 27306 W DynamicDDSService: appName is running in background.com.nothing.launcher
+06-13 02:22:54.691  4325  4401 I DynamicDDSService: handleMessage(ACTIVITY_INVOKE{appInfo=com.anonymous.MyNewAppClean isFullScreen=}true)
+06-13 02:22:54.693 30228 30228 I Monkey  : Events injected: 1
+06-13 02:22:54.694   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.0::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.694  2176  5439 E ANDR-PERF-LM: DependentServices: getSTServiceAndLinkToDeath() 66: IServicetracker::getService failed!
+06-13 02:22:54.696   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.696  2233  2233 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+06-13 02:22:54.698  3162  6652 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.699  3162  6652 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.700  3162  6652 D NtMemoryManager: mIsHighPressureScene: false : com.anonymous.MyNewAppClean
+06-13 02:22:54.700  3162  6652 D NtProcessManager: Top app: com.anonymous.MyNewAppClean
+06-13 02:22:54.700  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.701  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: sendEvents() 232: Start hint for app com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity/1, hintID : 4099, hintID hex : 1003 value: -1
+06-13 02:22:54.701  2110  2204 I ANDR-PWR-OPT: PowerAppClassifier: getAppType() 59: checking app [com.anonymous.MyNewAppClean] is type 1
+06-13 02:22:54.701  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: isGame() 355: com.anonymous.MyNewAppClean is Game = 1
+06-13 02:22:54.702  2221  8558 V AudioFlinger: setParameters: filtered keyvalue screen_state=on
+06-13 02:22:54.702  4288  4288 D QtiLinkBandwidthEstimator-0: handleMessage: 1
+06-13 02:22:54.703  4288  4288 D QtiLinkBandwidthEstimator-1: handleMessage: 1
+06-13 02:22:54.704  4354  4354 I NT-TopTaskTracker: Call back onTaskMovedToFront taskId = 21099
+06-13 02:22:54.704  4354  4497 I NT-AppEventTracker: Begin non-home task duration timing:TaskDuration(taskId=21099, pkgName=com.anonymous.MyNewAppClean, userId=UserHandle{0}, beginTime=1781310174704, endTime=0, windowType=1, duration=0, state=2)
+06-13 02:22:54.704  1940  1940 D Zygote  : Forked child process 30255
+06-13 02:22:54.706 18313 18313 I PkDeviceHelper: PkDeviceHelper.refreshDevices():87 refreshing devices
+06-13 02:22:54.706  3162 30256 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1269 com.qualcomm.qti.Performance$SendGameLaunchBroadcast.run:292 java.lang.Thread.run:1572 <bottom of call stack> <bottom of call stack> 
+06-13 02:22:54.707  3162  3226 I ActivityManager: Start proc 30255:com.anonymous.MyNewAppClean/u0a438 for next-top-activity {com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity}
+06-13 02:22:54.709  3162  6917 D CoreBackPreview: Window{158e4 u0 Splash Screen com.anonymous.MyNewAppClean}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@c2ab402, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+06-13 02:22:54.711  3162  3226 I ActivityManager: ProcessObserver broadcast disabled
+06-13 02:22:54.711  3162  3226 D MemoryStatusReporter: com.anonymous.MyNewAppClean is UI Cold Start
+06-13 02:22:54.711  3954  3954 D AuthRippleControllerEx: updateOrientationEventListener canDetectOrientation:true isRotationLocked:false isKeyguardShow:false
+06-13 02:22:54.716  3162  3219 W ProcessStats: Tracking association SourceState{5a96347 system/1000 BFgs #434482} whose proc state 4 is better than process ProcessState{eac1664 com.nothing.wallpaper:Atmosphere/10212 pkg=com.nothing.wallpaper} proc state 5 (6 skipped)
+06-13 02:22:54.716  5378  5451 V OsAgent : broadcastSystemEvent - 7
+06-13 02:22:54.717 30228 30228 I Monkey  : ## Network stats: elapsed time=58ms (0ms mobile, 0ms wifi, 58ms not connected)
+06-13 02:22:54.718  3954  4060 D NtViewRootImpl: mPopUpViewOffsets: offset=(0.0, 0.0), scale=(1.0, 1.0)
+06-13 02:22:54.721  2037  3017 D AHAL: AudioDevice: SetParameters: 1536: enter: screen_state=on
+06-13 02:22:54.723 30255 30255 I s.MyNewAppClean: Using generational CollectorTypeCMC GC.
+06-13 02:22:54.724  3954  3954 D AuthRippleControllerEx: updateOrientationEventListener canDetectOrientation:true isRotationLocked:false isKeyguardShow:false
+06-13 02:22:54.724  2037  3017 D AHAL: AudioVoice: VoiceSetParameters: 121: Enter params: screen_state=on
+06-13 02:22:54.724  2037  3017 D AHAL: AudioVoice: VoiceSetParameters: 377: Exit ret: 0
+06-13 02:22:54.726  2037  3017 D AHAL: hfp: hfp_set_parameters: 444: enter
+06-13 02:22:54.728 30228 30228 I app_process: System.exit called, status: 0
+06-13 02:22:54.728 30228 30228 I AndroidRuntime: VM exiting with result code 0.
+06-13 02:22:54.729  3954  3954 D AuthRippleControllerEx: updateOrientationEventListener canDetectOrientation:true isRotationLocked:false isKeyguardShow:false
+06-13 02:22:54.730 22560 22582 W SQLiteLog: (28) double-quoted string literal: "com.anonymous.MyNewAppClean"
+06-13 02:22:54.730  3954  4926 V WindowManagerShell: onTransitionReady(transaction=13580686782182)
+06-13 02:22:54.731  3162  3216 V WindowManager: Sent Transition (#2917) createdAt=06-13 02:22:54.661 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=21099 effectiveUid=10438 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity } baseActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} topActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} numActivities=1 lastActiveTime=242851203 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{605ef8b Task{73b699b #21099 type=standard A=10438:com.anonymous.MyNewAppClean}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 126 - 0, 0) topActivityInfo=ActivityInfo{58868 com.anonymous.MyNewAppClean.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 687 - 805, 1767) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2392) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 2917 }
+06-13 02:22:54.731  3954  4047 V WindowManagerShell: onTransitionReady (#2917) android.os.BinderProxy@f78053c: {id=2917 t=OPEN f=0x0 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[
+06-13 02:22:54.731  3954  4047 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=21099)/@0x3263c58 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.731  3954  4047 V WindowManagerShell:         {m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x1bab1b1 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.731  3954  4047 V WindowManagerShell:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xe87c696 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}
+06-13 02:22:54.731  3954  4047 V WindowManagerShell:     ]}
+06-13 02:22:54.731  3954  3954 D AuthRippleControllerEx: updateOrientationEventListener canDetectOrientation:true isRotationLocked:false isKeyguardShow:false
+06-13 02:22:54.732  3954  4047 V WindowManagerShell: Playing animation for (#2917) android.os.BinderProxy@f78053c@0
+06-13 02:22:54.732  3954  4047 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+06-13 02:22:54.732  3954  4047 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=2917 t=OPEN f=0x0 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=21099)/@0x3263c58 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x1bab1b1 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xe87c696 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}]}
+06-13 02:22:54.732  3954  4047 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.nothing.launcher/com.android.searchlauncher.SearchLauncher} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@92ff062, appThread = android.app.IApplicationThread$Stub$Proxy@27365f3, debugName = QuickstepLaunchHome }}
+06-13 02:22:54.732  3954  4047 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT,CHANGE] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.nothing.launcher/com.android.searchlauncher.SearchLauncher} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=TRANSLUCENT mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@124a2b0, appThread = android.app.IApplicationThread$Stub$Proxy@a4b1529, debugName = QuickstepLaunchHome_OpenTransluent }}
+06-13 02:22:54.732  3954  4047 V WindowManagerShell:  Delegate animation for (#2917) to null
+06-13 02:22:54.732  3954  4047 V WindowManagerShell: start default transition animation, info = {id=2917 t=OPEN f=0x0 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=21099)/@0x3263c58 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x1bab1b1 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xe87c696 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}]}
+06-13 02:22:54.733  3954  4047 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@a17b7ed animAttr=0x13 type=OPEN isEntrance=false
+06-13 02:22:54.733 30255 30255 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+06-13 02:22:54.733  3954  4047 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@bc4e5e9 animAttr=0x12 type=OPEN isEntrance=true
+06-13 02:22:54.734  4354  4354 I NT-TopTaskTracker: Call back onTaskMovedToFront taskId = 21099
+06-13 02:22:54.734  3954  4047 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@815994b
+06-13 02:22:54.734  3162  3216 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+06-13 02:22:54.735  3162  3216 V WindowManager:     info={id=2917 t=OPEN f=0x0 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[
+06-13 02:22:54.735  3162  3216 V WindowManager:         {WCT{RemoteToken{605ef8b Task{73b699b #21099 type=standard A=10438:com.anonymous.MyNewAppClean}}} m=OPEN f=NONE leash=Surface(name=Task=21099)/@0xe498d05 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.735  3162  3216 V WindowManager:         {WCT{RemoteToken{8c653a3 Task{84a7faa #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x45537d9 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.735  3162  3216 V WindowManager:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xd7b3d23 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}
+06-13 02:22:54.735  3162  3216 V WindowManager:     ]}
+06-13 02:22:54.735  2037  3017 D AHAL: FM: fm_set_parameters: 261: Enter
+06-13 02:22:54.735  2037  3017 D AHAL: FM: fm_set_parameters: 319: exit
+06-13 02:22:54.735  2037  3017 D AHAL: AudioDevice: SetParameters: 1609:  - screen = on
+06-13 02:22:54.736  2037  3017 I PAL: ResourceManager: setParameter: 10772: Screen State:1
+06-13 02:22:54.736  2037  3017 D AHAL: AudioDevice: SetParameters: 2456: exit: screen_state=on
+06-13 02:22:54.738  3162  6917 D CompatibilityInfo: mCompatibilityFlags - 0
+06-13 02:22:54.738  3162  6917 D CompatibilityInfo: applicationDensity - 420
+06-13 02:22:54.738  3162  6917 D CompatibilityInfo: applicationScale - 1.0
+06-13 02:22:54.739  3954  3954 D LightBarController: updateStatus= numStacks: 1, size: 1, appearance: 0
+06-13 02:22:54.742  5378  5451 V OsAgent : broadcastSystemEvent - 7
+06-13 02:22:54.744  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.744  3162  3217 I SensorService: checkAndReportAmbientLightSensorStateChangeLocked new 0 old 0 force 0
+06-13 02:22:54.751 30255 30255 D nativeloader: Configuring clns-9 for other apk /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/lib/arm64:/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.anonymous.MyNewAppClean
+06-13 02:22:54.754 30255 30255 I s.MyNewAppClean: AssetManager2(0xb4000078d286f558) locale list changing from [] to [fr-FR]
+06-13 02:22:54.755  3162  3620 I EventHub: Removing device Monkey touch due to epoll hang-up event.
+06-13 02:22:54.755  3162  3620 I EventHub: Removed device: path=/dev/input/event7 name=Monkey touch id=8 fd=448 classes=TOUCH | TOUCH_MT
+06-13 02:22:54.756  3162  3620 I InputReader: Device removed: id=8, eventHubId=8, name='Monkey touch', descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f', sources=TOUCHSCREEN
+06-13 02:22:54.756 30255 30255 I Perf    : Connecting to perf service.
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment: Currently set values for:
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.linecorp.b612.android, com.campmobile.snow, com.google.android.apps.tachyon]
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native, native, native]
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment: com.anonymous.MyNewAppClean is not listed in per-application setting
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment: ANGLE allowlist from config: 
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment: com.anonymous.MyNewAppClean is not listed in ANGLE allowlist or settings, returning default
+06-13 02:22:54.758 30255 30255 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+06-13 02:22:54.770 30255 30255 W FirebaseApp: Default FirebaseApp failed to initialize because no default options were found. This usually means that com.google.gms:google-services was not applied to your gradle project.
+06-13 02:22:54.770 30255 30255 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+06-13 02:22:54.770  3162  3620 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x2392 ROTATION_0}
+06-13 02:22:54.771  3162  3620 I EventHub: Removing device '/dev/input/event7' due to inotify event
+06-13 02:22:54.773 18313 18313 I PkDeviceHelper: PkDeviceHelper.refreshDevices():87 refreshing devices
+06-13 02:22:54.775  4354  4354 D TouchInteractionService: disposeEventHandlers: Reason: Initializing input monitor due to: onTrackpadConnected() instance=249974535
+06-13 02:22:54.775  4354  4354 D InputMonitorCompat: Input event receiver for monitor (swipe-up-disp0) disposed
+06-13 02:22:54.775  4354  4354 D InputMonitorCompat: Input monitor (swipe-up-disp0) disposed
+06-13 02:22:54.777  4354  4354 D InputMonitorCompat: Input monitor (swipe-up-disp0) created
+06-13 02:22:54.777  4354  4354 D InputMonitorCompat: Input event receiver for monitor (swipe-up-disp0) created
+06-13 02:22:54.777  4354  4354 I NT-OrientationTouchTransformer: AEROP-2352,createOrAddTouchRegion method called, info:rotation = 0
+06-13 02:22:54.778 30255 30255 W SoLoader: Initializing SoLoader: 0
+06-13 02:22:54.778 30255 30255 W SoLoader: Recording new base apk path: /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk
+06-13 02:22:54.778 30255 30255 W SoLoader: Previously recorded 0 base apk paths.
+06-13 02:22:54.778 30255 30255 I SoLoader: Preparing SO source: DirectorySoSource[root = /vendor/lib64 flags = 2]
+06-13 02:22:54.778 30255 30255 I SoLoader: Preparing SO source: DirectorySoSource[root = /system/lib64 flags = 2]
+06-13 02:22:54.779 30255 30255 I SoLoader: Preparing SO source: DirectApkSoSource[root = [/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a]]
+06-13 02:22:54.780 30255 30255 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/lib/arm64 flags = 0]]
+06-13 02:22:54.780 30255 30255 I SoLoader: init finish: 4 SO sources prepared
+06-13 02:22:54.780 30255 30255 W SoLoader: SoLoader initialized: 8
+06-13 02:22:54.784  3954  3954 D NavigationModeController: getCurrentUserContext: contextUser=0 currentUser=0
+06-13 02:22:54.785 27358 27358 I bynm    : onPause
+06-13 02:22:54.786 27358 27358 W dolk    : measuring already stopped.
+06-13 02:22:54.787 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libc++_shared.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.789 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libjsi.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.791 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libfbjni.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.793 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libreactnative.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Entering merged library JNI_OnLoad.
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing 12 pre-merged libs (including stub)
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x77696dcedc
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x77697adf40
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x77697c09f8
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x77697e5e30
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x77698785b0
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7769892b24
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7769899458
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x77698b5070
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x776994d1a4
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x77699547e0
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x776995bda4
+06-13 02:22:54.793 30255 30255 D jni_lib_merge: About to register 11 actual methods.
+06-13 02:22:54.798 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libreact_codegen_rnscreens.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Entering merged library JNI_OnLoad.
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing 12 pre-merged libs (including stub)
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x77696dcedc
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x77697adf40
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x77697c09f8
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x77697e5e30
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x77698785b0
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7769892b24
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7769899458
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x77698b5070
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x776994d1a4
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x77699547e0
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x776995bda4
+06-13 02:22:54.798 30255 30255 D jni_lib_merge: About to register 11 actual methods.
+06-13 02:22:54.800 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libreact_codegen_safeareacontext.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.802 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libreact_codegen_rnpicker.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Entering merged library JNI_OnLoad.
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing 12 pre-merged libs (including stub)
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x77696dcedc
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x77697adf40
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x77697c09f8
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x77697e5e30
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x77698785b0
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7769892b24
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7769899458
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x77698b5070
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x776994d1a4
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x77699547e0
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x776995bda4
+06-13 02:22:54.802 30255 30255 D jni_lib_merge: About to register 11 actual methods.
+06-13 02:22:54.803 30255 30255 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libappmodules.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.807   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.807  3162  6917 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.807  3162  6917 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.808  3162  6917 V NtGameModeImpl: onAppFocusChanged: pkg=com.anonymous.MyNewAppClean, uid=10438, category=-1, launchMode= 1
+06-13 02:22:54.808  3162  6917 D NtPopUpViewImpl: PopUpView: onAppFocusChanged: newTask=Task{73b699b #21099 type=standard A=10438:com.anonymous.MyNewAppClean}, showDimmer=false
+06-13 02:22:54.808  3162  6917 D NtKafkaEventHelper: onActivityRecordChanged: info com.anonymous.MyNewAppClean:10438:30255
+06-13 02:22:54.809  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.811  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.812 30255 30276 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+06-13 02:22:54.812  3935  7047 D TopAppSceneDetector: currentFocusApp=com.anonymous.MyNewAppClean
+06-13 02:22:54.813 30255 30255 I s.MyNewAppClean: AssetManager2(0xb4000078d28a82b8) locale list changing from [] to [fr-FR]
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: QUALCOMM build                   : f1c98d72b3, I45c5214ffd
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Build Date                       : 07/11/25
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: E031.47.18.36
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Local Branch                     : 
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.VENDOR.14.3.0.11.00.00.973.839
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Remote Branch                    : NONE
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Build Config                     : S L 16.1.2 AArch64
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Driver Version                   : 0800.49
+06-13 02:22:54.816 30255 30276 I AdrenoGLES-0: Process Name                     : com.anonymous.MyNewAppClean
+06-13 02:22:54.818 30255 30255 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+06-13 02:22:54.818 30255 30255 I s.MyNewAppClean: AssetManager2(0xb4000078d28a7958) locale list changing from [] to [fr-FR]
+06-13 02:22:54.819  4288  4662 D Nt-Bpf-NtBpfControl: EVENT_RTT_UID: 10438
+06-13 02:22:54.819  4288  4662 D Nt-Bpf-Client: updateDataInfoSwitch: dataInfoConfig = [DataInfoConfig{feature_enable=true, if_index=23, tcp_enable=true, tcp_rtt_enable=false, tcp_rtt_uid=10438, udp_enable=false, dns_enable=false, icmp_enable=true}]
+06-13 02:22:54.819  4288  4662 D Nt-Bpf-Client: dataInfoSwitch: dataInfoConfig = [DataInfoConfig{feature_enable=true, if_index=23, tcp_enable=true, tcp_rtt_enable=false, tcp_rtt_uid=10438, udp_enable=false, dns_enable=false, icmp_enable=true}]
+06-13 02:22:54.819  4288  4678 D Nt-Bpf-Connection: sendMessage: Message{messageType=REQUEST_DATA_INFO, data={"dns_enable":false,"feature_enable":true,"icmp_enable":true,"if_index":23,"rtt_to_file":false,"rtt_uid":10438,"tcp_enable":true,"udp_enable":false}, len=148}
+06-13 02:22:54.819  4679  5544 D Nt-Bpf-Recive: Recive type: 4, len: 148, data: {"dns_enable":false,"feature_enable":true,"icmp_enable":true,"if_index":23,"rtt_to_file":false,"rtt_uid":10438,"tcp_enable":true,"udp_enable":false}
+06-13 02:22:54.820 30255 30255 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+06-13 02:22:54.821 30255 30276 I AdrenoGLES-0: PFP: 0x01100079, ME: 0x00000000
+06-13 02:22:54.825  2193  2193 I qspmHal : enter getGpuProf at: -1101253016
+06-13 02:22:54.825  2193  2193 I qspmHal : PID 30255 from GFX matched.
+06-13 02:22:54.825  2193  2193 I qspmHal : gpuProfName:com.anonymous.MyNewAppClean-gpu - gpu prof_info.path:/data/vendor/gaming/com.anonymous.MyNewAppClean-gpu
+06-13 02:22:54.825  2193  2193 E qspmHal : GPU profile file NOT found !!
+06-13 02:22:54.555   561   561 I servicemanager: Caller(pid=30255,uid=10438,sid=u:r:untrusted_app:s0:c182,c257,c512,c768) Found vendor.qti.qspmhal.IQspmhal/default in device VINTF manifest.
+06-13 02:22:54.826  3935  7047 D NearbyDetector: onTopActivityChanged: top class name: com.anonymous.MyNewAppClean.MainActivity
+06-13 02:22:54.826  3935  7047 D NearbyDetector: onTopActivityChanged: top class name: com.android.searchlauncher.SearchLauncher
+06-13 02:22:54.826  3935  7047 D GameSceneDetector: Failed to call isBoostTypeGame: java.lang.NoSuchMethodException: android.util.BoostFramework.perfGetFeedback []
+06-13 02:22:54.826  3935  7047 D GameSceneDetector: onTopChanged=com.anonymous.MyNewAppClean, isBoostTypeGame=false, isCategoryGame=false, isTopGame=false
+06-13 02:22:54.826  3935  7047 D SceneManager: TopAPP=com.anonymous.MyNewAppClean
+06-13 02:22:54.826  3935  7047 D ThermalMitigationStrategy: onForegroundAppChange: app changed, should update buffer rate info next time
+06-13 02:22:54.827 30255 30276 I AdrenoUtils: <ReadGpuID:366>: Reading chip ID through GSL
+06-13 02:22:54.835 30255 30255 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+06-13 02:22:54.835 30255 30255 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+06-13 02:22:54.836 30255 30279 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+06-13 02:22:54.836 30255 30279 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+06-13 02:22:54.836 30255 30279 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+06-13 02:22:54.836 30255 30279 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactContext(): Creating BridgelessReactContext
+06-13 02:22:54.837 30255 30279 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+06-13 02:22:54.837 30255 30255 D CompatChangeReporter: Compat change id reported: 377864165; UID 10438; state: ENABLED
+06-13 02:22:54.837 30255 30255 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+06-13 02:22:54.842 30255 30255 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+06-13 02:22:54.842 30255 30255 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+06-13 02:22:54.842 30255 30255 I ContentCaptureHelper: Setting logging level to OFF
+06-13 02:22:54.844 30255 30279 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libhermes.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.845 30255 30279 D nativeloader: Load /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!/lib/arm64-v8a/libhermestooling.so using class loader ns clns-9 (caller=/data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex): ok
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: Entering merged library JNI_OnLoad.
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: Preparing 4 pre-merged libs (including stub)
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: Preparing to register libhermes_executor_so.  onload_func: 0x77bc71f4b0
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: Preparing to register libhermesinstancejni_so.  onload_func: 0x77bc726900
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: Preparing to register libjsijniprofiler_so.  onload_func: 0x77bc7270ec
+06-13 02:22:54.845 30255 30279 D jni_lib_merge: About to register 3 actual methods.
+06-13 02:22:54.846 30255 30255 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+06-13 02:22:54.846 30255 30255 W unknown:BridgelessReact: ReactContext.onHostResume()
+06-13 02:22:54.852 30255 30284 E HWUI    : attachRenderThreadToJvm
+06-13 02:22:54.852 30255 30284 E HWUI    : AM IS NOT NULL!
+06-13 02:22:54.852 30255 30285 E HWUI    : attachRenderThreadToJvm
+06-13 02:22:54.852 30255 30285 E HWUI    : AM IS NOT NULL!
+06-13 02:22:54.583   561   561 I servicemanager: Caller(pid=30255,uid=10438,sid=u:r:untrusted_app:s0:c182,c257,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+06-13 02:22:54.855   855   855 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+06-13 02:22:54.586   561   561 I servicemanager: Caller(pid=30255,uid=10438,sid=u:r:untrusted_app:s0:c182,c257,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+--------- beginning of crash
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: FATAL EXCEPTION: pool-4-thread-1
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: Process: com.anonymous.MyNewAppClean, PID: 30255
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: java.lang.NoSuchMethodError: No static method getDirectConverter(Ljava/lang/Class;)Lexpo/modules/kotlin/types/JSTypeConverter; in class Lexpo/modules/kotlin/types/ReturnTypeKt; or its super classes (declaration of 'expo.modules.kotlin.types.ReturnTypeKt' appears in /data/app/~~aKdhQwrFzEddJsASk0LB2w==/com.anonymous.MyNewAppClean-JVwyybsw4EyVW6coEiUXEg==/base.apk!classes3.dex)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.font.FontLoaderModule.definition(FontLoaderModule.kt:98)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.kotlin.ModuleHolder.<init>(ModuleHolder.kt:22)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.kotlin.ModuleRegistry.register(ModuleRegistry.kt:27)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.kotlin.ModuleRegistry.register(ModuleRegistry.kt:47)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.kotlin.AppContext.<init>(AppContext.kt:120)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.kotlin.KotlinInteropModuleRegistry.<init>(KotlinInteropModuleRegistry.kt:23)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.adapters.react.NativeModulesProxy.<init>(NativeModulesProxy.java:45)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.adapters.react.ModuleRegistryAdapter.getOrCreateNativeModulesProxy(ModuleRegistryAdapter.java:135)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.adapters.react.ModuleRegistryAdapter.createNativeModules(ModuleRegistryAdapter.java:64)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at expo.modules.ExpoModulesPackage.createNativeModules(ExpoModulesPackage.kt:35)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.ReactPackageTurboModuleManagerDelegate.initialize(ReactPackageTurboModuleManagerDelegate.kt:87)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.ReactPackageTurboModuleManagerDelegate.<init>(ReactPackageTurboModuleManagerDelegate.kt:45)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultTurboModuleManagerDelegate.<init>(DefaultTurboModuleManagerDelegate.kt:35)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultTurboModuleManagerDelegate.<init>(DefaultTurboModuleManagerDelegate.kt:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultTurboModuleManagerDelegate$Builder.build(DefaultTurboModuleManagerDelegate.kt:62)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultTurboModuleManagerDelegate$Builder.build(DefaultTurboModuleManagerDelegate.kt:42)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.ReactPackageTurboModuleManagerDelegate$Builder.build(ReactPackageTurboModuleManagerDelegate.kt:241)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.ReactInstance.<init>(ReactInstance.kt:168)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReactInstanceTask$lambda$41$lambda$38(ReactHostImpl.kt:920)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$LQY77bFECGrnkUqd7Ku55sJ721A(ReactHostImpl.kt:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda11.then(D8$$SyntheticClass:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:356)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$b7MTC0ufkn_2TjF4BGcNqGR9qK0(Task.kt:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:354)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:250)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:132)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:117)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:174)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task.$r8$lambda$l0wwo5AvbHxlwfI1R7CH_codxoo(Task.kt:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:390)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$IPpysnehFwANEiW061YzapkMdoE(Task.kt:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+06-13 02:22:54.866 30255 30279 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1572)
+06-13 02:22:54.867  3162  6670 D ActivityCustomizationUtil: uid = 10438
+06-13 02:22:54.868  3162  6917 D CoreBackPreview: Window{ec1ed4f u0 com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@148c761, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+06-13 02:22:54.869  3162  3564 W ActivityTaskManager:   Force finishing activity com.anonymous.MyNewAppClean/.MainActivity
+06-13 02:22:54.870  3954  4047 V WindowManagerShell: Transition requested (#2918): android.os.BinderProxy@c4d6b88 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=21099 effectiveUid=10438 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity } baseActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} topActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} numActivities=1 lastActiveTime=242851336 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@6ea6921} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{e5d0146 com.anonymous.MyNewAppClean.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 687 - 805, 1767) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2392) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 2918 }
+06-13 02:22:54.870  3162  3564 D NtAppUsageManager: Duration is too short, ignore : 170 in com.anonymous.MyNewAppClean
+06-13 02:22:54.870  3162  3564 D ActivityTrigger: ActivityTrigger activityPauseTrigger 
+06-13 02:22:54.870  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: sendEvents() 232: Start hint for app com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity/1, hintID : 4100, hintID hex : 1004 value: -1
+06-13 02:22:54.871  2110  2204 I ANDR-PWR-OPT: PowerAppClassifier: getAppType() 59: checking app [com.anonymous.MyNewAppClean] is type 1
+06-13 02:22:54.871  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: isGame() 355: com.anonymous.MyNewAppClean is Game = 1
+06-13 02:22:54.871   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.871  3162  3564 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.871  3162  3564 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.872 30255 30255 D NtViewRootImpl: mPopUpViewOffsets: offset=(0.0, 0.0), scale=(1.0, 1.0)
+06-13 02:22:54.873  4325  4401 I DynamicDDSService: handleMessage(ACTIVITY_INVOKE{appInfo=com.nothing.launcher isFullScreen=}true)
+06-13 02:22:54.874 30255 30279 I Process : Sending signal. PID: 30255 SIG: 9
+06-13 02:22:54.875  4354  4354 I NT-TopTaskTracker: Found recent activity taskId = 20679
+06-13 02:22:54.881  2233  3451 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+06-13 02:22:54.882  3954  3954 D LightBarController: updateStatus= numStacks: 1, size: 0, appearance: 0
+06-13 02:22:54.894  3162  6586 I WindowManager: WIN DEATH: Window{ec1ed4f u0 com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity}
+06-13 02:22:54.895  3162  3564 I ActivityManager: Process com.anonymous.MyNewAppClean (pid 30255) has died: fg  TOP 
+06-13 02:22:54.895  3162  3228 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10438/pid_30255
+06-13 02:22:54.895  1940  1940 I Zygote  : Process 30255 exited due to signal 9 (Killed)
+06-13 02:22:54.895  3162  6586 D ActivityCustomizationUtil: uid = 10214
+06-13 02:22:54.900  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: killProcess is called for pid : 30255
+06-13 02:22:54.902  5378  5451 V OsAgent : broadcastSystemEvent - 7
+06-13 02:22:54.902  3162  3217 I SensorService: checkAndReportAmbientLightSensorStateChangeLocked new 0 old 0 force 0
+06-13 02:22:54.904  3162  3705 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-13 02:22:54.904  3162  3705 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-13 02:22:54.904  3162  3705 D InetDiagMessage: Destroyed live tcp sockets for uids={10438} in 1ms
+06-13 02:22:54.905  3162  3705 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+06-13 02:22:54.905  3162  3705 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+06-13 02:22:54.905  3162  3705 D InetDiagMessage: Destroyed live tcp sockets for uids={20438} in 1ms
+06-13 02:22:54.906   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.906  3162  3564 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.906  3162  3564 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.906   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.906  3162  3564 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.906  3162  3564 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.907   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.907  3162  3564 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.907  3162  3564 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.907  3162  3564 D NtPopUpViewImpl: PopUpView: onAppFocusChanged: newTask=null, showDimmer=false
+06-13 02:22:54.907  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.908  3162  3564 D NtMemoryManager: mIsHighPressureScene: false : com.nothing.launcher
+06-13 02:22:54.908  3162  3564 D NtProcessManager: Top app: com.nothing.launcher
+06-13 02:22:54.908  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: sendEvents() 232: Start hint for app com.nothing.launcher/com.android.searchlauncher.SearchLauncher/40018016, hintID : 4099, hintID hex : 1003 value: -1
+06-13 02:22:54.908   855   855 I hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.servicetracker@1.2::IServicetracker/default in either framework or device VINTF manifest.
+06-13 02:22:54.908  3162  3564 W ActivityTaskManager: servicetracker HIDL not available
+06-13 02:22:54.908  2110  2204 I ANDR-PWR-OPT: PowerAppClassifier: getAppType() 59: checking app [com.nothing.launcher] is type 1
+06-13 02:22:54.908  3162  3564 E ActivityTaskManager: Unable to get servicetracker HAL instance
+06-13 02:22:54.909  3162  3564 V NtGameModeImpl: onAppFocusChanged: pkg=com.nothing.launcher, uid=10214, category=-1, launchMode= 1
+06-13 02:22:54.909  2110  2204 I ANDR-PWR-OPT: GAMEPOWEROPT: isGame() 355: com.nothing.launcher is Game = 1
+06-13 02:22:54.909  3162  3564 D NtPopUpViewImpl: PopUpView: onAppFocusChanged: newTask=Task{adae099 #20679 type=home I=com.nothing.launcher/com.android.searchlauncher.SearchLauncher}, showDimmer=false
+06-13 02:22:54.909  3162  3564 D NtKafkaEventHelper: onActivityRecordChanged: info com.nothing.launcher:10214:4354
+06-13 02:22:54.912  3954  4047 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=true, height=434
+06-13 02:22:54.912  2467  4527 D StNfcHal: (#06B84) Rx 6f 02 0f (hidden)
+06-13 02:22:54.912  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:54.912  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.912  4354  4354 I NT-AIWidgetAIWidgetController: Lifecycle onStateChanged event=ON_RESUME
+06-13 02:22:54.912  4354  4354 I NT-AIWidgetAIWidgetInputMonitor: Lifecycle onStateChanged event=ON_RESUME
+06-13 02:22:54.913 27358 27358 I bynm    : onResume
+06-13 02:22:54.913 27358 27358 W dolk    : missing event name
+06-13 02:22:54.914  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:22:54.917  4354  4354 D NtViewRootImpl: mPopUpViewOffsets: offset=(0.0, 0.0), scale=(1.0, 1.0)
+06-13 02:22:54.921  3954  3973 V WindowManagerShell: onTransitionReady(transaction=13580686782197)
+06-13 02:22:54.921  3954  4047 V WindowManagerShell: onTransitionReady (#2918) android.os.BinderProxy@c4d6b88: {id=2918 t=CLOSE f=0x10 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[
+06-13 02:22:54.921  3954  4047 V WindowManagerShell:         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x6210f07 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.921  3954  4047 V WindowManagerShell:         {m=CLOSE f=NONE leash=Surface(name=Task=21099)/@0x511b834 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.921  3954  4047 V WindowManagerShell:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xae3765d sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}
+06-13 02:22:54.921  3954  4047 V WindowManagerShell:     ]}
+06-13 02:22:54.921  3954  4047 V WindowManagerShell: Transition (#2918) android.os.BinderProxy@c4d6b88@0 ready while (#2917) android.os.BinderProxy@f78053c@0 is still animating. Notify the animating transition in case they can be merged
+06-13 02:22:54.923  3954  4047 D PopUpViewTransitionObserver: onTransitionFinished: transition=android.os.BinderProxy@f78053c, taskInfo=[]
+06-13 02:22:54.923  3954  4047 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#2917) android.os.BinderProxy@f78053c@0
+06-13 02:22:54.924  3935  7047 D TopAppSceneDetector: currentFocusApp=com.nothing.launcher
+06-13 02:22:54.924  4288  4662 D Nt-Bpf-NtBpfControl: EVENT_RTT_UID: 0
+06-13 02:22:54.924  4288  4662 D Nt-Bpf-Client: updateDataInfoSwitch: dataInfoConfig = [DataInfoConfig{feature_enable=true, if_index=23, tcp_enable=true, tcp_rtt_enable=false, tcp_rtt_uid=0, udp_enable=false, dns_enable=false, icmp_enable=true}]
+06-13 02:22:54.924  4288  4662 D Nt-Bpf-Client: dataInfoSwitch: dataInfoConfig = [DataInfoConfig{feature_enable=true, if_index=23, tcp_enable=true, tcp_rtt_enable=false, tcp_rtt_uid=0, udp_enable=false, dns_enable=false, icmp_enable=true}]
+06-13 02:22:54.924  4288  4678 D Nt-Bpf-Connection: sendMessage: Message{messageType=REQUEST_DATA_INFO, data={"dns_enable":false,"feature_enable":true,"icmp_enable":true,"if_index":23,"rtt_to_file":false,"rtt_uid":0,"tcp_enable":true,"udp_enable":false}, len=144}
+06-13 02:22:54.925  4679  5544 D Nt-Bpf-Recive: Recive type: 4, len: 144, data: {"dns_enable":false,"feature_enable":true,"icmp_enable":true,"if_index":23,"rtt_to_file":false,"rtt_uid":0,"tcp_enable":true,"udp_enable":false}
+06-13 02:22:54.926  3162  3216 V WindowManager: Sent Transition (#2918) createdAt=06-13 02:22:54.869 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=21099 effectiveUid=10438 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity } baseActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} topActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} origActivity=null realActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} numActivities=1 lastActiveTime=242851336 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{605ef8b Task{73b699b #21099 type=standard A=10438:com.anonymous.MyNewAppClean}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{58868 com.anonymous.MyNewAppClean.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 687 - 805, 1767) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2392) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 16, debugId = 2918 }
+06-13 02:22:54.926  3162  3216 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+06-13 02:22:54.926  3162  3216 V WindowManager:     info={id=2918 t=CLOSE f=0x10 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[
+06-13 02:22:54.926  3162  3216 V WindowManager:         {WCT{RemoteToken{8c653a3 Task{84a7faa #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x45537d9 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.926  3162  3216 V WindowManager:         {WCT{RemoteToken{605ef8b Task{73b699b #21099 type=standard A=10438:com.anonymous.MyNewAppClean}}} m=CLOSE f=NONE leash=Surface(name=Task=21099)/@0xe498d05 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},
+06-13 02:22:54.926  3162  3216 V WindowManager:         {m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xd7b3d23 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}
+06-13 02:22:54.926  3162  3216 V WindowManager:     ]}
+06-13 02:22:54.927  3162  3628 I ImeTracker: com.nothing.launcher:1da1baef: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+06-13 02:22:54.927  4354  4354 D InsetsController: hide(ime(), fromIme=false)
+06-13 02:22:54.927  4354  4354 I ImeTracker: com.nothing.launcher:1da1baef: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+06-13 02:22:54.928  2176  2176 E ANDR-PERF-LM: PrefAppsFeature: getData() 345: Could not get preferred apps, Prefered apps list is empty or device is low on memory.
+06-13 02:22:54.933  3954  4047 V WindowManagerShell: Playing animation for (#2918) android.os.BinderProxy@c4d6b88@0
+06-13 02:22:54.933  3954  4047 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+06-13 02:22:54.933  3954  4047 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=2918 t=CLOSE f=0x10 trk=0 isSameTaskSwitch=false r=[0@Point(0, 0)] c=[{m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x6210f07 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=CLOSE f=NONE leash=Surface(name=Task=21099)/@0x511b834 sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 taskParent=-1 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=60x60 mDragBarSize=189x42}},{m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{62483f0 showWhenLocked=false})/@0xae3765d sb=Rect(0, 0 - 1080, 2392) eb=Rect(0, 0 - 1080, 2392) epz=Point(1080, 2392) d=0 ntPopUpView={mIsTryEnterWindowingMode=false mIsEnterWindowingModeLandscape=false mIsChangingWindowformBounds=false mStartPos=Point(0, 0) mEndPos=Point(0, 0) mStartScale=0.0 mEndScale=0.0 mStartCornerRadius=0.0 mEndCornerRadius=0.0 mAppBounds=Rect(0, 0 - 0, 0) mWindowCrop=Rect(0, 0 - 0, 0) mStartDragOrChangingBounds=Rect(0, 0 - 0, 0) mEndDragOrChangingBounds=Rect(0, 0 - 0, 0) mBottomLeftCornerLeash=null mBottomRightCornerLeash=null mDragBarLeash=null mCornerHintSize=0x0 mDragBarSize=0x0}}]}
+06-13 02:22:54.933  3954  4047 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.nothing.launcher/com.android.searchlauncher.SearchLauncher} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@92ff062, appThread = android.app.IApplicationThread$Stub$Proxy@27365f3, debugName = QuickstepLaunchHome }}
+06-13 02:22:54.934  3954  4047 D RemoteTransitionHandler: Found filterPair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.nothing.launcher/com.android.searchlauncher.SearchLauncher} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@92ff062, appThread = android.app.IApplicationThread$Stub$Proxy@27365f3, debugName = QuickstepLaunchHome }}
+06-13 02:22:54.934  3954  4047 V WindowManagerShell:  Delegate animation for (#2918) to RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@92ff062, appThread = android.app.IApplicationThread$Stub$Proxy@27365f3, debugName = QuickstepLaunchHome }
+06-13 02:22:54.935  3935  7047 D NearbyDetector: onTopActivityChanged: top class name: com.android.searchlauncher.SearchLauncher
+06-13 02:22:54.935  3935  7047 D NearbyDetector: onTopActivityChanged: top class name: com.android.settings.spa.SpaActivity
+06-13 02:22:54.935  3935  7047 D GameSceneDetector: Failed to call isBoostTypeGame: java.lang.NoSuchMethodException: android.util.BoostFramework.perfGetFeedback []
+06-13 02:22:54.935  3935  7047 D GameSceneDetector: onTopChanged=com.nothing.launcher, isBoostTypeGame=false, isCategoryGame=false, isTopGame=false
+06-13 02:22:54.935  3935  7047 D SceneManager: TopAPP=com.nothing.launcher
+06-13 02:22:54.936  4354  4354 I NotificationListener: Handling notification state refresh for com.android.systemui#0
+06-13 02:22:54.936  4354  4354 I NotificationListener: Handling notification state refresh for com.whatsapp#0
+06-13 02:22:54.936  4354  4354 I NotificationListener: Handling notification state refresh for com.whatsapp#0
+06-13 02:22:54.936  4354  4354 I NotificationListener: Handling notification state refresh for com.snapchat.android#0
+06-13 02:22:54.936  4354  4354 I NotificationListener: Handling notification state refresh for com.snapchat.android#0
+06-13 02:22:54.937  3162  3219 D NtPerfTraceManagerImpl: packageName = com.nothing.launcher, taskId = 20679
+06-13 02:22:54.937 18313 18313 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+06-13 02:22:54.937  3954  4047 V WindowManagerShell:  animated by com.android.wm.shell.transition.RemoteTransitionHandler@3d88338
+06-13 02:22:54.936  3162  3216 V WindowManager: Finish Transition (#2917): created at 06-13 02:22:54.661 collect-started=0.03ms request-sent=14.984ms started=19.376ms ready=65.528ms sent=67.541ms commit=18.483ms finished=265.744ms
+06-13 02:22:54.939  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: bindService is called for service : com.google.android.gms/.chimera.PersistentApiService and for client com.google.android.googlequicksearchbox:googleapp
+06-13 02:22:54.939  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for service : com.google.android.gms/.chimera.PersistentApiServiceare :55
+06-13 02:22:54.939  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for client : com.google.android.googlequicksearchbox:googleappare :4
+06-13 02:22:54.940  3162  6913 D Dragonite: acquire handle 96
+06-13 02:22:54.940  3162  3586 D Dragonite: sceneId = 1, pid = 4354, packageName = com.nothing.launcher, duration = 60000, params = null
+06-13 02:22:54.940  4354  4354 I AIWidgetAIWidgetController: setWidgetsTouchable last=true, new=false, reason=NTDragLayer FloatingView isAdd=true, force=false
+06-13 02:22:54.671  2082  2082 I [binder][0x43da5643d6c][00:22:54.940373] qca6750: [2082:I:HDD] __wlan_hdd_cfg80211_get_logger_supp_feature: Ring buffer disable
+06-13 02:22:54.941  3162  3698 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-13 02:22:54.941  3162  5528 D NtSmartWifiMonitor: get rssi = -41, frequecy=5280, datastall=0, current state=6
+06-13 02:22:54.941  3162  5528 D NtSmartWifiMonitor: 5G Wifi rssi queue: sufficient rssi=-70[-40, -40, -41]
+06-13 02:22:54.941  3162  4990 D NtSmartWifi: handleMessage EVENT_LINK_QUALITY_CHANGED ...
+06-13 02:22:54.941  3162  4990 D NtSmartWifi: enableSufficientCheckWhenScreenOn, true,  mSmartWifiEnabled=true, screenOn= true
+06-13 02:22:54.942  4354  4354 I NT-AIWidgetAIWidgetController: updateWidgetSurfaceZ com.nothing.aiwidget.features.widget.ui.plugin.RemoteSurfaceView{8f568e3 V.E...... .......D 21,21-779,379 #7f0a0059 app:id/ai_widget_container} z=-2
+06-13 02:22:54.942  4354  4354 I NT-AIWidgetAIWidgetController: updateWidgetSurfaceZ com.nothing.aiwidget.features.widget.ui.plugin.RemoteSurfaceView{90502e0 V.E...... .......D 21,21-379,379 #7f0a0059 app:id/ai_widget_container} z=-2
+06-13 02:22:54.943  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.943 18313 18313 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 0, locked = false
+06-13 02:22:54.943  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.944 18313 18313 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.nothing.launcher, inputType=80001, inputTypeString=Normal[NoSuggestion], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=10000003, privateImeOptions=null, actionName=SEARCH, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+06-13 02:22:54.944 18313 18313 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():321 Update input view padding, isNavbarOverInputWindow=true, bottom inset=126
+06-13 02:22:54.945  4354  4354 D b/311077782: LauncherAnimationRunner.setAnimation
+06-13 02:22:54.945 18313 18313 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 1, locked = false
+06-13 02:22:54.946  4354  4483 W HWUI    : Image decoding logging dropped!
+06-13 02:22:54.946  3162  6670 W PackageConfigPersister: App-specific configuration not found for packageName: com.nothing.launcher and userId: 0
+06-13 02:22:54.948  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.948  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.950  4354  4481 I NT-WPOffsetInterpolator: setWallpaperOffsets mCurrentOffset = 0.0
+06-13 02:22:54.953  3162  3219 D NtPerfTraceManagerImpl: packageName = com.nothing.launcher, taskId = 20679
+06-13 02:22:54.955  3162  3564 W ParceledListSlice: Element #109 is 20876 bytes.
+06-13 02:22:54.961  4354  4483 I NT-QuickstepModelDelegate: handleUpdate: no diff for -102
+06-13 02:22:54.963  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.963  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.964  3954  4060 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@58cec79
+06-13 02:22:54.967  3162  3776 W WindowManager: Failed looking up window session=Session{c017268 3954:u0a10216} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6614 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:1020 android.view.IWindowSession$Stub.onTransact:1200 
+06-13 02:22:54.967  3162  3776 I WindowManager: setOnBackInvokedCallback(): No window state for package:com.android.systemui
+06-13 02:22:54.967  3162  6586 D OomAdjuster: process : com.android.systemui, pid = 3954, isTop = false, uid = 10216, hasActivity = false
+06-13 02:22:54.968  3162  6586 D OomAdjuster: system app not need limit!
+06-13 02:22:54.968  3162  3233 D OomAdjuster: set group = -1
+06-13 02:22:54.968  3162  3233 D OomAdjuster: set cpuset: -1
+06-13 02:22:54.968  4354  4354 D NtViewRootImpl: mPopUpViewOffsets: offset=(0.0, 0.0), scale=(1.0, 1.0)
+06-13 02:22:54.970  3162  3628 I ImeTracker: com.nothing.launcher:1bd71ec9: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+06-13 02:22:54.971  4354  4354 D InsetsController: hide(ime(), fromIme=false)
+06-13 02:22:54.971  4354  4354 I ImeTracker: com.nothing.launcher:1bd71ec9: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+06-13 02:22:54.971 18313 18313 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2259 
+06-13 02:22:54.972 18313 18313 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 0, locked = false
+06-13 02:22:54.972 18313 18313 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1446 onStartInput(EditorInfo{EditorInfo{packageName=com.nothing.launcher, inputType=80001, inputTypeString=Normal[NoSuggestion], enableLearning=true, autoCorrection=true, autoComplete=true, imeOptions=10000003, privateImeOptions=null, actionName=SEARCH, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+06-13 02:22:54.972 18313 18313 I AndroidIME: LatinIMEBase.updateInputViewCoverNavigation():321 Update input view padding, isNavbarOverInputWindow=true, bottom inset=126
+06-13 02:22:54.973 18313 18313 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatusInternal():127 repeatCheckTimes = 1, locked = false
+06-13 02:22:54.973  3162  6652 W PackageConfigPersister: App-specific configuration not found for packageName: com.nothing.launcher and userId: 0
+06-13 02:22:54.980  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.980  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.996  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:54.996  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.008  2176  5433 E ANDR-PERF-LM: StatsProvider: stats_nl_error_callback() 147: NL SOC receive error: No such process
+06-13 02:22:55.008  2176  5433 E ANDR-PERF-LM: StatsProvider: sendRecvData() 476: nl_recvmsgs failed return=-12
+06-13 02:22:55.008  2176  5433 E ANDR-PERF-LM: StatsProvider: getPIDStats() 200: sendRecvData returned error = -4
+06-13 02:22:55.008  2176  5433 E ANDR-PERF-LM: MemoryMeter: start() 174: getPIDStats failed, stopping meter thread
+06-13 02:22:55.013  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.013  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.022 31577 31840 D BufferPoolAccessor2.0: bufferpool2 0xb4000079929218e8 : 5(40960 size) total buffers - 1(8192 size) used buffers - 435989/436004 (recycle/alloc) - 497/871276 (fetch/transfer)
+06-13 02:22:55.029  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.030  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.046  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.046  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.063  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.063  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.080  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.080  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.096  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.096  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.113  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.113  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.129  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.130  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.134  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.137  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.138  3954  3961 W System  : A resource failed to call release. 
+06-13 02:22:55.146  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.146  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.163  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.164  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.166  2467  4527 D StNfcHal: (#06B85) Rx 6f 02 27 (hidden)
+06-13 02:22:55.166  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:55.167  3162  3592 D ActivityManager: freezing 25602 com.android.settings
+06-13 02:22:55.170  3162  3592 D ActivityManager: freezing 26109 com.nothing.logkit
+06-13 02:22:55.171  3162  3592 D ActivityManager: freezing 26392 com.nothing.ntessentialrecorder
+06-13 02:22:55.172  3162  3592 D ActivityManager: freezing 25732 com.android.keychain
+06-13 02:22:55.180  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.180  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.196  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.196  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.213  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.213  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.230  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.230  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.246  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.247  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.264  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.264  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.280  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.280  3162  3564 D Dragonite: release 96
+06-13 02:22:55.280  4354  4354 D AIWidgetView_RemoteSurface: isSurfaceViewShowing: true.
+06-13 02:22:55.282  4354  4481 I NT-TransitionSmoothHelper: clear
+06-13 02:22:55.284  4354  4481 I NT-WPOffsetInterpolator: setWallpaperOffsets mCurrentOffset = 0.0
+06-13 02:22:55.284  3954  4047 D PopUpViewTransitionObserver: onTransitionFinished: transition=android.os.BinderProxy@c4d6b88, taskInfo=[TaskInfo{userId=0 taskId=21099 effectiveUid=10438 displayId=0 isRunning=false baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.anonymous.MyNewAppClean/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.anonymous.MyNewAppClean/com.anonymous.MyNewAppClean.MainActivity} numActivities=0 lastActiveTime=242851400 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f36f51b} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 126 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 687 - 805, 1767) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 0, 0) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=undefined}} topActivityMainWindowFrame=null}]
+06-13 02:22:55.284  3954  4047 D CaptionWindowDecorViewModel: Destroying window decoration for task 21099, decoration=null, callers=com.android.wm.shell.popupview.PopUpViewTransitionObserver.onTransitionFinished:184 com.android.wm.shell.transition.Transitions.onFinish:1220 com.android.wm.shell.transition.Transitions.lambda$playTransition$3:1092 com.android.wm.shell.transition.Transitions.$r8$lambda$96XCaSAhJXxB3nlVJy1TNPeH46k:0 com.android.wm.shell.transition.Transitions$$ExternalSyntheticLambda5.onTransitionFinished:0 
+06-13 02:22:55.284  3954  4047 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#2918) android.os.BinderProxy@c4d6b88@0
+06-13 02:22:55.287  3162  3216 V WindowManager: Finish Transition (#2918): created at 06-13 02:22:54.869 collect-started=0.04ms request-sent=0.097ms started=4.897ms ready=41.616ms sent=50.802ms commit=27.714ms finished=418.088ms
+06-13 02:22:55.291  3954  4047 V WindowManagerShell: Track 0 became idle
+06-13 02:22:55.291  3954  4047 V WindowManagerShell: All active transition animations finished
+06-13 02:22:55.291  4354  4354 D RecentsView: onTaskRemoved: 21099, not handling task stack changes
+06-13 02:22:55.291  4354  4354 D RecentsView: onTaskRemoved: 21099, not handling task stack changes
+06-13 02:22:55.299  3954  4047 D CaptionWindowDecorViewModel: Destroying window decoration for task 21099, decoration=null, callers=com.android.wm.shell.windowdecor.CaptionWindowDecorViewModel.onTaskVanished:234 com.android.wm.shell.fullscreen.FullscreenTaskListener.lambda$onTaskVanished$2:173 com.android.wm.shell.fullscreen.FullscreenTaskListener$$ExternalSyntheticLambda1.accept:0 java.util.Optional.ifPresent:178 com.android.wm.shell.fullscreen.FullscreenTaskListener.onTaskVanished:173 
+06-13 02:22:55.370  3162  3219 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{199006634 u0 com.anonymous.MyNewAppClean/.MainActivity t-1 f}}
+06-13 02:22:55.497  4354  4354 I AIWidgetAIWidgetController: setWidgetsTouchable last=false, new=true, reason=NTDragLayer FloatingView isAdd=false, force=false
+06-13 02:22:55.498  4354  4354 I NT-AIWidgetAIWidgetController: updateWidgetSurfaceZ com.nothing.aiwidget.features.widget.ui.plugin.RemoteSurfaceView{8f568e3 V.E...... ......ID 21,21-779,379 #7f0a0059 app:id/ai_widget_container} z=2
+06-13 02:22:55.499  4354  4354 I NT-AIWidgetAIWidgetController: updateWidgetSurfaceZ com.nothing.aiwidget.features.widget.ui.plugin.RemoteSurfaceView{90502e0 V.E...... ......ID 21,21-379,379 #7f0a0059 app:id/ai_widget_container} z=2
+06-13 02:22:55.619  2165  2247 I SDM     : DisplayBase::CommitThread: Received idle timeout, panel: video, timeout: 69999 us
+06-13 02:22:55.779  2467  4527 D StNfcHal: (#06B86) Rx 6f 02 0f (hidden)
+06-13 02:22:55.779  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:55.625  2592  2592 E [binder][0x43da67bdf95][00:22:55.894855] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:22:55.625  2592  2592 E [binder][0x43da67be1e5][00:22:55.894886] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:22:55.905  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:22:55.905  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:22:55.905  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:22:56.004  2467  4527 D StNfcHal: (#06B87) Rx 6f 02 27 (hidden)
+06-13 02:22:56.004  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:56.308  2467  4527 D StNfcHal: (#06B88) Rx 6f 02 0f (hidden)
+06-13 02:22:56.308  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:56.562  2467  4527 D StNfcHal: (#06B89) Rx 6f 02 27 (hidden)
+06-13 02:22:56.562  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:56.308  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3985, Cur:1598,chg_s:1,t_l:90,b_s:2,OffTlast:0,lcd_off:0,Vu:4357,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:22:56.308  2050  2050 E healthd : battery l=49 v=3985 t=33.0 h=2 st=2 c=1598550 fc=4726000 cc=228 chg=a
+06-13 02:22:56.584  4219  4219 D QtiCarrierConfigHelper: WARNING, no carrier configs on phone Id: 1
+06-13 02:22:56.585  4174  4174 D DeviceStatisticsService: onReceive: action= android.intent.action.BATTERY_CHANGED
+06-13 02:22:56.587  3935  3935 D BatteryHealthController: plugType=1
+06-13 02:22:56.588  2118  2118 E NtChgAidl: NtChgAidl: setChargeFccIn user:2,val = 9000
+06-13 02:22:56.588  3935  5069 D BatteryHealthController: invoke mICharge setChargeFccInt: 9000
+06-13 02:22:56.588  3954  6152 D PowerUI : can't show warning due to - plugged: true status unknown: false
+06-13 02:22:56.319  2118  2118 W nt_vote : FCC_MAIN: FCC_BATTERY_HEALTH_VOTER,1 same vote on of val=9000
+06-13 02:22:56.319  2118  2118 W nt_vote : FCC_MAIN: FCC_BATTERY_HEALTH_VOTER,1 Ignoring similar vote on of val=9000
+06-13 02:22:56.589  3162  3225 D ActivityManager: sync unfroze 25602 com.android.settings for 3
+06-13 02:22:56.589  3162  3162 V UiModeManager: updateLocked: null action, mDockState=0, category=null
+06-13 02:22:56.321  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3985, Cur:1598,chg_s:1,t_l:0,b_s:2,OffTlast:0,lcd_off:0,Vu:4360,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:22:56.591  2118  2118 E NtChgAidl: NtChgAidl: mBattTempRegion _aidl_return:0
+06-13 02:22:56.591  3162  3162 E UiModeManager: mComputedNightMode:true, mNightMode.get():2, mOverrideNightModeOn:false, mOverrideNightModeOff:falsemTwilightManager.getLastTwilightState():null
+06-13 02:22:56.591  3162  3162 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mNightMode=com.android.server.UiModeManagerService$1@4dc2802; mNightModeCustomType=-1; uiMode=33
+06-13 02:22:56.591  3162  3162 D NtThemeManager: setExtraDark, currentUser:0, enableOverlay:false, mCurrentExtraDarkMode:false
+06-13 02:22:56.592  3162  3225 D ActivityManager: sync unfroze 28404 com.google.android.apps.turbo for 3
+06-13 02:22:56.592  4174  4174 V DeviceStatisticsService: chargerType=1 batteryLevel=49 totalBatteryCapacity=4678700
+06-13 02:22:56.592  4174  4174 D DeviceInfoAidlClient: isRadioOn()=true
+06-13 02:22:56.592  4174  4174 I DeviceInfoAidlClient: isPowerInfoNeverSent=false batteryLevel=49 batteryLevelIndex=5 chargingMode=1 totalCapacity=4678700 powerSaveMode=false
+06-13 02:22:56.593  3954  4083 D ChargeStateMonitor: syncNtChgData() adaptorPowerRate = 0 phoneMaxPowerRate = 50
+06-13 02:22:56.321  2050  2050 W HealthLoop: debug.tracing.screen_brightness:8.405373
+06-13 02:22:56.594  3162  3225 D ActivityManager: sync unfroze 28422 com.android.settings for 3
+06-13 02:22:56.595  3162  3225 I ActivityManager: PendingStartActivityUids startActivity to updateOomAdj delay:1224ms, uid:10214
+06-13 02:22:56.595  3954  3954 D BatteryController: onBatteryStateChange
+06-13 02:22:56.596 28422 28422 D BatteryUsageBroadcastReceiver: onReceive:android.intent.action.BATTERY_LEVEL_CHANGED
+06-13 02:22:56.596 28422 28422 I NT-Settings: BatteryUsageBroadcastReceiver -> do nothing for dual app user action=android.intent.action.BATTERY_LEVEL_CHANGED
+06-13 02:22:56.596 25602 25602 D BatteryUsageBroadcastReceiver: onReceive:android.intent.action.BATTERY_LEVEL_CHANGED
+06-13 02:22:56.596 14028 14450 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:56.597 14028 14450 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:56.597 14028 14450 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:56.597 14028 14450 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:56.597 14028 14450 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:56.598 14028 14450 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:56.598 14028 14450 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:56.598 14028 14450 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:56.598 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:56.598 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:56.599 25602 25602 D BatteryUsageBroadcastReceiver: fetch data because of event: ACTION_BATTERY_LEVEL_CHANGED
+06-13 02:22:56.621  2108  2108 W android.hardware.power.stats-service: Skipping malformed line: 
+06-13 02:22:56.684  2165  2247 I SDM     : DisplayBase::CommitThread: Received idle timeout, panel: video, timeout: 70000 us
+06-13 02:22:56.740  2176  2267 E ANDR-PERF-UTIL: ANDR-PERF-UTIL: change_node_val() 319: Failed to update node /proc/sys/walt/sched_per_task_boost with value 30255 0
+06-13 02:22:56.740  2176  2267 E ANDR-PERF-OPTSHANDLER: ANDR-PERF-OPTSHANDLER: sched_reset_task_boost() 3468: can't reset task 30255
+06-13 02:22:56.740  2176  2267 E ANDR-PERF-RESOURCEQS: ANDR-PERF-RESOURCEQS: RemoveAndApply() 380: Failed to reset optimization [3, 32]
+06-13 02:22:56.808  2645 31846 D BufferPoolAccessor2.0: bufferpool2 0xb400007b067dbd08 : 5(20548 size) total buffers - 2(9216 size) used buffers - 435689/435761 (recycle/alloc) - 1216/435760 (fetch/transfer)
+06-13 02:22:56.560     0     0 W [    C0] [rt_task_fixup][725]: RT task was runnable for more than 200000 ns on CPU 0, moved it to CPU 3 (SensorService-3576)
+06-13 02:22:56.868  2467  4527 D StNfcHal: (#06B8A) Rx 6f 02 0f (hidden)
+06-13 02:22:56.869  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:57.122  2467  4527 D StNfcHal: (#06B8B) Rx 6f 02 27 (hidden)
+06-13 02:22:57.123  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:57.429  2467  4527 D StNfcHal: (#06B8C) Rx 6f 02 0f (hidden)
+06-13 02:22:57.429  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:57.591  3162  3572 I NtCharge: mLastBatteryCycleCount:228
+06-13 02:22:57.598  3162  3572 D NtCharge:  currentTimeInDay: 20617 LastTimeInDay: -2 diff: 20619
+06-13 02:22:57.602 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:57.602 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:57.602 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:57.603 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:57.603 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:57.603 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:57.603 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:57.603 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:57.604 14028 14040 I elpq    : (REDACTED) HDM. appOpsListener %s %s
+06-13 02:22:57.604 14028 14040 I elpq    : (REDACTED) HDM. Ignoring irrelevant audio permission changes for package %s
+06-13 02:22:57.683  2467  4527 D StNfcHal: (#06B8D) Rx 6f 02 27 (hidden)
+06-13 02:22:57.684  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:57.799  2110  2110 W pmCoreThread: type=1400 audit(0.0:338776015): avc:  denied  { write } for  name="qlm_service" dev="tmpfs" ino=1644 scontext=u:r:vendor_hal_poweroptservice_qti:s0 tcontext=u:object_r:vendor_qlm_socket:s0 tclass=sock_file permissive=0
+06-13 02:22:57.804  2110  7225 E QLM-Client-Lib: QLM-Lib-Client:do_common_listen:connect failure, err:13, path:/dev/socket/qlm_service
+06-13 02:22:57.630  2592  2592 E [binder][0x43da8c7591f][00:22:57.900103] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:22:57.630  2592  2592 E [binder][0x43da8c75e97][00:22:57.900175] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:22:57.631 13516 13516 I [kworke][0x43da8c792e9][00:22:57.900873] qca6750: [13516:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+06-13 02:22:57.939  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:22:57.939  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:22:57.939  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:22:57.687  2082  2082 I [binder][0x43da8d7cea1][00:22:57.956283] qca6750: [2082:I:HDD] __wlan_hdd_cfg80211_get_logger_supp_feature: Ring buffer disable
+06-13 02:22:57.958  3162  3698 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-13 02:22:57.960  3162  5528 D NtSmartWifiMonitor: get rssi = -40, frequecy=5280, datastall=0, current state=6
+06-13 02:22:57.960  3162  5528 D NtSmartWifiMonitor: 5G Wifi rssi queue: sufficient rssi=-70[-40]
+06-13 02:22:57.990  2467  4527 D StNfcHal: (#06B8E) Rx 6f 02 0f (hidden)
+06-13 02:22:57.990  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:58.186  3162  6531 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-13 02:22:58.187  3162  6531 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-13 02:22:58.243  2467  4527 D StNfcHal: (#06B8F) Rx 6f 02 27 (hidden)
+06-13 02:22:58.244  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:58.550  2467  4527 D StNfcHal: (#06B90) Rx 6f 02 0f (hidden)
+06-13 02:22:58.550  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:58.804  2467  4527 D StNfcHal: (#06B91) Rx 6f 02 27 (hidden)
+06-13 02:22:58.804  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:59.180  3954  4064 D MobileConnectionRepositoryEx: [1] handleMessage: EVENT_SIGNAL_SMOOTH
+06-13 02:22:59.181  3954  4064 D MobileConnectionRepositoryEx: [1] current smooth level: 4
+06-13 02:22:59.181  3954  4064 D MobileConnectionRepositoryEx: [1] smooth level == last level, stop smooth
+06-13 02:22:59.181  3954  4064 D MobileConnectionRepositoryEx: [1] getSmoothLevel: 3 mSmoothLevel -1
+06-13 02:22:59.183  3954  4081 I MobileIconInteractor:  isGsm true primaryLevel 3  alwaysUseCdmaLevel false cdmaLevel 0 isLteCamped true lteRsrpLevel 4
+06-13 02:22:59.307  2165  2247 I SDM     : DisplayBase::CommitThread: Received idle timeout, panel: video, timeout: 70000 us
+06-13 02:22:59.073     0     0 W [    C0] [rt_task_fixup][725]: RT task was runnable for more than 200000 ns on CPU 0, moved it to CPU 3 (kgsl-events-903)
+06-13 02:22:59.420  2467  4527 D StNfcHal: (#06B92) Rx 6f 02 0f (hidden)
+06-13 02:22:59.421  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:59.639  2467  4527 D StNfcHal: (#06B93) Rx 6f 02 27 (hidden)
+06-13 02:22:59.640  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:22:59.737 32708 29369 I NearbyMediums: No BLE Fast/GATT advertisements found in the latest cycle.
+06-13 02:22:59.737 32708 29369 I NearbyMediums: Current Tracked Scanning Clients are : {NearbyConnections.EnvironmentMonitor, NearbySharing, NearbyConnections.TxAdvertisement}
+06-13 02:22:59.543 13516 13516 I [kworke][0x43daaf79fbd][00:22:59.812511] qca6750: [13516:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+06-13 02:22:59.635  2592  2592 E [binder][0x43dab12916c][00:22:59.904480] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:22:59.635  2592  2592 E [binder][0x43dab129679][00:22:59.904547] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:22:59.918  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:22:59.919  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:22:59.919  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:22:59.941  3935  7047 D ThermalMitigationStrategy: reEvaluate:  mPendingScenesInfo: scenes: [charger] app: com.nothing.launcher appCat: -1 level: 5 temp: 36 uid: 10214 pid: 4354 mScenesInfo: scenes: [charger] app: com.nothing.launcher appCat: -1 level: 5 temp: 36 uid: 10214 pid: 4354 sceneChange: false appChange: false levelChange: false
+06-13 02:22:59.942  3935  7047 D ThermalMitigationStrategy: notifyBufferRateLocked: com.nothing.launcher 4354 10214 -1 com.nothing.launcher|charger -1
+06-13 02:22:59.945  2467  4527 D StNfcHal: (#06B94) Rx 6f 02 0f (hidden)
+06-13 02:22:59.946  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:00.030  3954  3954 D OLDQuickLookClockView: refreshInfo hasCalendar:false hasWeather:true
+06-13 02:23:00.037  3954  3954 D OLDQuickLookClockView: refreshInfo hasCalendar:false hasWeather:false
+06-13 02:23:00.138  3954  3954 D OLDQuickLookClockView:  getFormattedDateLocked:fr_FR
+06-13 02:23:00.139  3954  3954 D OLDQuickLookClockView: updateDateInfo: Sam. 13 juin
+06-13 02:23:00.139  3954  3954 D OLDQuickLookClockView: refreshInfo hasCalendar:false hasWeather:true
+06-13 02:23:00.141 31577 31840 D BufferPoolAccessor2.0: bufferpool2 0xb4000079929218e8 : 5(40960 size) total buffers - 1(8192 size) used buffers - 436185/436200 (recycle/alloc) - 497/871668 (fetch/transfer)
+06-13 02:23:00.142  3954  3954 D OLDQuickLookClockView:  getFormattedDateLocked:fr_FR
+06-13 02:23:00.143  3954  3954 D OLDQuickLookClockView: updateDateInfo: Sam. 13 juin
+06-13 02:23:00.143  3954  3954 D OLDQuickLookClockView: refreshInfo hasCalendar:false hasWeather:false
+06-13 02:23:00.156  2165  2247 I SDM     : DisplayBase::CommitThread: Received idle timeout, panel: video, timeout: 69999 us
+06-13 02:23:00.200  2467  4527 D StNfcHal: (#06B95) Rx 6f 02 27 (hidden)
+06-13 02:23:00.200  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:00.506  2467  4527 D StNfcHal: (#06B96) Rx 6f 02 0f (hidden)
+06-13 02:23:00.507  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:00.395 29403 29403 E BATTERY_CHG: nt_update_status_function_work: capacity:49,Vbat:3987579
+06-13 02:23:00.415  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3987, Cur:1661,chg_s:1,t_l:5,b_s:2,OffTlast:0,lcd_off:0,Vu:4359,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:23:00.415  2050  2050 E healthd : battery l=49 v=3987 t=33.0 h=2 st=2 c=1661723 fc=4726000 cc=228 chg=a
+06-13 02:23:00.685  2118  2118 E NtChgAidl: NtChgAidl: mBattTempRegion _aidl_return:0
+06-13 02:23:00.696  2118  2118 E NtChgAidl: NtChgAidl: mBattTempRegion _aidl_return:0
+06-13 02:23:00.426  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3987, Cur:1661,chg_s:1,t_l:5,b_s:2,OffTlast:0,lcd_off:0,Vu:4361,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:23:00.427  2050  2050 W HealthLoop: debug.tracing.screen_brightness:8.405373
+06-13 02:23:00.760  2467  4527 D StNfcHal: (#06B97) Rx 6f 02 27 (hidden)
+06-13 02:23:00.761  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:00.715  2082  2082 I [binder][0x43dac4ee965][00:23:00.984266] qca6750: [2082:I:HDD] __wlan_hdd_cfg80211_get_logger_supp_feature: Ring buffer disable
+06-13 02:23:00.987  3162  3698 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-13 02:23:00.989  3162  5528 D NtSmartWifiMonitor: get rssi = -40, frequecy=5280, datastall=0, current state=6
+06-13 02:23:00.989  3162  5528 D NtSmartWifiMonitor: 5G Wifi rssi queue: sufficient rssi=-70[-40, -40]
+06-13 02:23:01.374  2467  4527 D StNfcHal: (#06B98) Rx 6f 02 0f (hidden)
+06-13 02:23:01.375  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:01.596  2467  4527 D StNfcHal: (#06B99) Rx 6f 02 27 (hidden)
+06-13 02:23:01.596  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:01.903  2467  4527 D StNfcHal: (#06B9A) Rx 6f 02 0f (hidden)
+06-13 02:23:01.903  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:01.638  2592  2592 E [binder][0x43dad5d86c5][00:23:01.907964] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:23:01.638  2592  2592 E [binder][0x43dad5d8c29][00:23:01.908036] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:23:01.910  2545  2545 I CNSS    : /sys/wifi/dump_in_progress doesn't exist
+06-13 02:23:01.910  2545  2545 I CNSS    : /sys/wifi/max_chipset_log_size doesn't exist
+06-13 02:23:01.639 13516 13516 I [kworke][0x43dad5db0e9][00:23:01.908526] qca6750: [13516:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+06-13 02:23:01.931  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:23:01.931  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:23:01.931  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:23:02.039  2645 31846 D BufferPoolAccessor2.0: bufferpool2 0xb400007b067dbd08 : 5(20548 size) total buffers - 1(4608 size) used buffers - 435887/435959 (recycle/alloc) - 1216/435958 (fetch/transfer)
+06-13 02:23:02.156  2467  4527 D StNfcHal: (#06B9B) Rx 6f 02 27 (hidden)
+06-13 02:23:02.157  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:02.226  3954  4064 I QAWController: Re-creating the QAW client to avoid stale.
+06-13 02:23:02.256  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: bindService is called for service : com.google.android.gms/.tapandpay.globalactions.WalletQuickAccessWalletService and for client com.android.systemui
+06-13 02:23:02.256  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for service : com.google.android.gms/.tapandpay.globalactions.WalletQuickAccessWalletServiceare :1
+06-13 02:23:02.256  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for client : com.android.systemuiare :6
+06-13 02:23:02.256  3162  3786 D BackgroundInstallControlService: Package event received: 0
+06-13 02:23:02.265  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: bindService is called for service : com.google.android.gms/.chimera.GmsApiService and for client com.google.android.gms.persistent
+06-13 02:23:02.265  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for service : com.google.android.gms/.chimera.GmsApiServiceare :4
+06-13 02:23:02.265  2177  2177 I vendor.qti.hardware.servicetrackeraidl-service: total connections for client : com.google.android.gms.persistentare :5
+06-13 02:23:02.266  2118  2118 E NtChgAidl: NtChgAidl: mBattTempRegion _aidl_return:0
+06-13 02:23:01.996  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3987, Cur:1642,chg_s:1,t_l:6,b_s:2,OffTlast:0,lcd_off:0,Vu:4360,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:23:01.996  2050  2050 E healthd : battery l=49 v=3987 t=33.0 h=2 st=2 c=1642496 fc=4726000 cc=228 chg=a
+06-13 02:23:02.008  2050  2050 E healthd : soc_b:31, soc:49, soc_c:49, Vol:3987, Cur:1642,chg_s:1,t_l:6,b_s:2,OffTlast:0,lcd_off:0,Vu:4358,Vw:0,pid:2050,brightness:8.405373,rmCap:2292
+06-13 02:23:02.278  2118  2118 E NtChgAidl: NtChgAidl: mBattTempRegion _aidl_return:0
+06-13 02:23:02.008  2050  2050 W HealthLoop: debug.tracing.screen_brightness:8.405373
+06-13 02:23:02.295 32708 29929 W HWUI    : Image decoding logging dropped!
+06-13 02:23:02.295 32708 29369 W HWUI    : Image decoding logging dropped!
+06-13 02:23:02.312  3954  4064 I QuickAccessWalletTile: Successfully retrieved wallet cards.
+06-13 02:23:02.317  3954  4064 I QuickAccessWalletTile: Successfully retrieved wallet cards.
+06-13 02:23:02.463  2467  4527 D StNfcHal: (#06B9C) Rx 6f 02 0f (hidden)
+06-13 02:23:02.463  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:02.718  2467  4527 D StNfcHal: (#06B9D) Rx 6f 02 27 (hidden)
+06-13 02:23:02.718  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:02.799  2110  2110 W pmCoreThread: type=1400 audit(0.0:338776016): avc:  denied  { write } for  name="qlm_service" dev="tmpfs" ino=1644 scontext=u:r:vendor_hal_poweroptservice_qti:s0 tcontext=u:object_r:vendor_qlm_socket:s0 tclass=sock_file permissive=0
+06-13 02:23:02.805  2110  7225 E QLM-Client-Lib: QLM-Lib-Client:do_common_listen:connect failure, err:13, path:/dev/socket/qlm_service
+06-13 02:23:03.024  2467  4527 D StNfcHal: (#06B9E) Rx 6f 02 0f (hidden)
+06-13 02:23:03.025  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:03.278  2467  4527 D StNfcHal: (#06B9F) Rx 6f 02 27 (hidden)
+06-13 02:23:03.278  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:03.584  2467  4527 D StNfcHal: (#06BA0) Rx 6f 02 0f (hidden)
+06-13 02:23:03.584  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:03.838  2467  4527 D StNfcHal: (#06BA1) Rx 6f 02 27 (hidden)
+06-13 02:23:03.839  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:03.641  2592  2592 E [binder][0x43dafa85edd][00:23:03.911059] qca6750: [2592:E:DP] dp_request_rx_hw_stats: Stats already requested
+06-13 02:23:03.641  2592  2592 E [binder][0x43dafa863fe][00:23:03.911127] qca6750: [2592:E:HDD] __wlan_hdd_cfg80211_stats_ext_request: Failed to get hw stats: 6
+06-13 02:23:03.642 13516 13516 I [kworke][0x43dafa88cce][00:23:03.911672] qca6750: [13516:I:PMO] pmo_core_psoc_send_host_wakeup_ind_to_fw: Host wakeup indication sent to fw
+06-13 02:23:03.946  2082  3840 I WifiHAL : event received NL80211_CMD_VENDOR, vendor_id = 0x1374, subcmd = 0xd
+06-13 02:23:03.946  2647  2647 I cnss-daemon: nl80211 response handler invoked
+06-13 02:23:03.946  2647  2647 I cnss-daemon: nl80211_response_handler: cmd 103, vendorID 4980, subcmd 13  received
+06-13 02:23:03.739  2082  2082 I [binder][0x43dafc4ebac][00:23:04.008510] qca6750: [2082:I:HDD] __wlan_hdd_cfg80211_get_logger_supp_feature: Ring buffer disable
+06-13 02:23:04.011  3162  3698 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+06-13 02:23:04.012  3162  5528 D NtSmartWifiMonitor: get rssi = -40, frequecy=5280, datastall=0, current state=6
+06-13 02:23:04.013  3162  5528 D NtSmartWifiMonitor: 5G Wifi rssi queue: sufficient rssi=-70[-40, -40, -40]
+06-13 02:23:04.013  3162  4990 D NtSmartWifi: handleMessage EVENT_LINK_QUALITY_CHANGED ...
+06-13 02:23:04.013  3162  4990 D NtSmartWifi: enableSufficientCheckWhenScreenOn, true,  mSmartWifiEnabled=true, screenOn= true
+06-13 02:23:04.145  2467  4527 D StNfcHal: (#06BA2) Rx 6f 02 0f (hidden)
+06-13 02:23:04.145  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:04.399  2467  4527 D StNfcHal: (#06BA3) Rx 6f 02 27 (hidden)
+06-13 02:23:04.399  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:04.705  2467  4527 D StNfcHal: (#06BA4) Rx 6f 02 0f (hidden)
+06-13 02:23:04.706  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:04.959  2467  4527 D StNfcHal: (#06BA5) Rx 6f 02 27 (hidden)
+06-13 02:23:04.959  2467  4526 D StNfcHal: HalStopTimer 
+06-13 02:23:04.975  3162  3162 W CachedAppOptimi: type=1400 audit(0.0:338776017): avc:  denied  { write } for  dev="tmpfs" ino=4097 scontext=u:r:system_server:s0 tcontext=u:object_r:zygote_tmpfs:s0 tclass=file permissive=0
+06-13 02:23:05.150  2813  2813 I adbd    : adbd service requested 'shell,v2:export ANDROID_LOG_TAGS="''"; exec logcat '-d''
+06-13 02:23:04.909   803   803 I logd    : logdr: UID=2000 GID=2000 PID=30307 n tail=0 logMask=99 pid=0 start=0ns deadline=0ns
