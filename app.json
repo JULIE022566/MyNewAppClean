@@ -26,11 +26,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra": {
-      "eas": {
-        "projectId": "68b2141a-391a-41ac-bf1e-1e531a9829a7"
-      }
-    },
     "plugins": [
       "@react-native-community/datetimepicker",
       [
@@ -43,6 +38,12 @@
         }
       ],
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "14beb792-d88e-450f-90e9-0c03d405c863"
+      }
+    },
+    "owner": "julie1706"
   }
 }
