@@ -124,7 +124,7 @@ export default function DiscoveredMessages() {
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       {discoveredMessages.length === 0 ? (
         <View style={styles.emptyContainer}>
-          <Text style={[styles.empty, { color: colors.subtle }]}>Tu n'as encore rien découvert 🫣</Text>
+          <Text style={[styles.empty, { color: colors.subtle }]}>Tu attends quoi pour ouvrir mes mots ?</Text>
         </View>
       ) : (
         <View style={{ flex: 1 }}>

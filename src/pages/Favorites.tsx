@@ -79,6 +79,8 @@ export default function Favorites() {
   if (favorites.length === 0) {
     return (
       <View style={[styles.emptyContainer, { backgroundColor: colors.background }]}> 
+      <Text style={[styles.emptyText, { color: colors.subtle }]}>
+      Tu aimes pas mes petits mots espèce d'ingrat ?
         </Text>
       </View>
     );
