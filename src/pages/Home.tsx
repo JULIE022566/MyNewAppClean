@@ -18,6 +18,8 @@ import { useMessage } from '../context/MessageContext';
 import { FontAwesome } from '@expo/vector-icons';
 import { Animated } from 'react-native';
 import { useRef } from 'react';
+import * as Notifications from 'expo-notifications';
+import { SchedulableTriggerInputTypes } from 'expo-notifications';
 
 type Message = {
   content: string;
@@ -55,74 +57,92 @@ export default function Home() {
   const [isOpeningMessage, setIsOpeningMessage] = useState(false);
 
   const getTodayString = () => {
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, '0');
+  const day = String(today.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+  
+  const load = useCallback(async () => {
+  setIsOpeningMessage(false);
+  scaleAnim.setValue(1);
+  shakeAnim.setValue(0);
+  opacityAnim.setValue(1);
+
+  const hourStr = await AsyncStorage.getItem('notif_hour');
+  const minuteStr = await AsyncStorage.getItem('notif_minute');
+
+  console.log('load called, hour:', hourStr, 'minute:', minuteStr);
+  const hour = parseInt(hourStr || '9');
+  const minute = parseInt(minuteStr || '0');
+  setNextHour(hour);
+  setNextMinute(minute);
+
+  const openedRaw = await AsyncStorage.getItem('discovered_messages');
+  const opened: Message[] = openedRaw ? JSON.parse(openedRaw) : [];
+  const openedDates = opened.map((m) => m.date);
+
+  const missed = messages.filter((msg) => {
+    if (msg.date === getTodayString()) return false;
+    const msgDate = new Date(msg.date);
     const today = new Date();
-    return today.toISOString().split('T')[0];
-  };
+    return msgDate < today && !openedDates.includes(msg.date);
+  });
+  setMissedMessages(missed);
 
-  useFocusEffect(
-    useCallback(() => {
-      // RESET DES ANIMATIONS
-          setIsOpeningMessage(false);
+  const todayMsg = messages.find(m => m.date === getTodayString());
+  if (todayMsg) {
+    setLastMessage(todayMsg);
+    const favRaw2 = await AsyncStorage.getItem('favorites');
+    const favs: Message[] = favRaw2 ? JSON.parse(favRaw2) : [];
+    setIsFavorite(favs.some((m) => m.date === todayMsg.date));
+  } else {
+    setLastMessage(null);
+  }
 
-          scaleAnim.setValue(1);
-          shakeAnim.setValue(0);
-          opacityAnim.setValue(1);
+  const todayDiscovered = openedDates.includes(getTodayString());
+  setTodayAlreadyDiscovered(todayDiscovered);
 
-      const load = async () => {
-        const hourStr = await AsyncStorage.getItem('notif_hour');
-        const minuteStr = await AsyncStorage.getItem('notif_minute');
-        const hour = parseInt(hourStr || '9');
-        const minute = parseInt(minuteStr || '0');
-        setNextHour(hour);
-        setNextMinute(minute);
+  console.log('todayDiscovered:', todayDiscovered);
+console.log('todayMsg:', todayMsg?.date);
+console.log('getTodayString:', getTodayString());
+console.log('openedDates:', openedDates);
 
-        const openedRaw = await AsyncStorage.getItem('discovered_messages');
-        const opened: Message[] = openedRaw ? JSON.parse(openedRaw) : [];
-        const openedDates = opened.map((m) => m.date);
+  const now = new Date();
+  const target = new Date();
+  target.setHours(hour, minute, 0, 0);
+  const messageAvailable = !todayDiscovered && target <= now;
+  setHasNewMessage(messageAvailable);
+  if (messageAvailable) {
+    setTimeout(() => {
+      setShowModal(true);
+    }, 500);
+  }
 
-        const missed = messages.filter((msg) => {
-            if (msg.date === getTodayString()) return false;
-            const msgDate = new Date(msg.date);
-            const today = new Date();
-            return msgDate < today && !openedDates.includes(msg.date);
-          });
+  const favRaw = await AsyncStorage.getItem('favorites');
+  if (favRaw) {
+    const parsedFavs = JSON.parse(favRaw);
+    setFavorites(parsedFavs.slice().reverse().slice(0, 4));
+  }
+}, []);
 
-        setMissedMessages(missed);
-
-        const todayMsg = messages.find(m => m.date === getTodayString());
-        if (todayMsg) {
-          setLastMessage(todayMsg);
-          const favRaw2 = await AsyncStorage.getItem('favorites');
-          const favs: Message[] = favRaw2 ? JSON.parse(favRaw2) : [];
-          setIsFavorite(favs.some((m) => m.date === todayMsg.date));
-        } else {
-          setLastMessage(null);
-        }
-
-        const todayDiscovered = openedDates.includes(getTodayString());
-        setTodayAlreadyDiscovered(todayDiscovered);
-
-        const now = new Date();
-        const target = new Date();
-        target.setHours(hour, minute, 0, 0);
-        const messageAvailable = !todayDiscovered && target <= now;
-        setHasNewMessage(messageAvailable);
-        if (messageAvailable) {
-          setTimeout(() => {
-            setShowModal(true);
-          }, 500);
-        }
-
-        const favRaw = await AsyncStorage.getItem('favorites');
-        if (favRaw) {
-          const parsedFavs = JSON.parse(favRaw);
-          setFavorites(parsedFavs.slice().reverse().slice(0, 4));
-        }
-      };
-
+useFocusEffect(
+  useCallback(() => {
+    const timer = setTimeout(() => {
       load();
-    }, [])
-  );
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [load])
+);
+
+useEffect(() => {
+  const subscription = Notifications.addNotificationReceivedListener(() => {
+    load();
+  });
+  return () => subscription.remove();
+}, [load]);
 
   useEffect(() => {
 

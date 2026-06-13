@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import * as Notifications from 'expo-notifications';
 import * as Device from 'expo-device';
+import { SchedulableTriggerInputTypes } from 'expo-notifications';
 
 type NotificationContextType = {
   setNotificationTime: (hour: number, minute: number) => void;
@@ -35,17 +36,17 @@ console.log('Expo Push Token:', tokenData.data);
       await Notifications.cancelAllScheduledNotificationsAsync();
 
       await Notifications.scheduleNotificationAsync({
-        content: {
-          title: '🌞 Nouveau message !',
-          body: 'Découvre ton message du jour 🥰',
-          sound: true,
-        },
-        trigger: {
-          hour: notificationTime.hour,
-          minute: notificationTime.minute,
-          repeats: true,
-        },
-      });
+      content: {
+        title: '🌞 Nouveau message !',
+        body: 'Découvre ton message du jour 🥰',
+        sound: true,
+      },
+      trigger: {
+        type: SchedulableTriggerInputTypes.DAILY,
+        hour: notificationTime.hour,
+        minute: notificationTime.minute,
+      },
+    });
     };
 
     registerAndSchedule();
